@@ -1,0 +1,34 @@
+// Colors
+$color_links: #f16b6f;
+$color_hover: #606c76;
+$color_body: #3c3530;
+$color_grey: #dadfe1;
+$color_alt: #aacd6e;
+
+// Typography
+$min-font: 16px;
+$max-font: 19px;
+
+// Font family stack
+$font_base: "Roboto", "Helvetica Neue", Helvetica, sans-serif;
+$font_headings: "Source Sans Pro", "Helvetica Neue", Helvetica, sans-serif;
+$font_alt: "Roboto", "Helvetica Neue", Helvetica, sans-serif;
+
+// Form settings
+$color_button_bg: #262626;
+$color_button_text: #fff;
+$color_forms: #cfd9db;
+$color_forms_text: #666;
+$color_forms_bg: #fff;
+$forms_border_radius: 3px;
+$forms_border_focus: darken(#cfd9db, 25%);
+
+// Breakpoints
+$layout-max-width: 100%;
+$container_tv: 1824px;
+$container_large: 1224px;
+$container_desktop: 960px;
+$container_landscape-ipad: 960px;
+$container_ipad: 770px;
+$container_mobile: 480px;
+$responsivenav: 872px;

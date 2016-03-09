@@ -1,4 +1,4 @@
-/* 
+/*
 
 REQUIRED STUFF
 ==============
@@ -23,7 +23,7 @@ var minifyhtml  = require('gulp-htmlmin');
 var runSequence = require('run-sequence');
 var exec        = require('child_process').exec;
 
-/* 
+/*
 
 ERROR HANDLING
 ==============
@@ -31,17 +31,17 @@ ERROR HANDLING
 
 var handleError = function(task) {
   return function(err) {
-    
+
       notify.onError({
         message: task + ' failed, check the logs..',
         sound: false
       })(err);
-    
+
     util.log(util.colors.bgRed(task + ' error:'), util.colors.red(err));
   };
 };
 
-/* 
+/*
 
 FILE PATHS
 ==========
@@ -50,14 +50,14 @@ FILE PATHS
 var imgSrc = 'src/images/*.{png,jpg,jpeg,gif}';
 var imgDest = 'dist/images';
 var sassSrc = 'src/sass/**/*.{sass,scss}';
-var sassFile = 'src/sass/layout/layout.scss';
+var sassFile = 'src/sass/layout.scss';
 var cssDest = 'dist/css';
 var jsSrc = 'src/js';
 var jsDest = 'dist/js';
 var markupSrc = 'src/*.php';
 var markupDest = 'dist';
 
-/* 
+/*
 
 BROWSERSYNC
 ===========
@@ -72,13 +72,13 @@ gulp.task('browsersync', function() {
     ];
 
     browserSync.init(files, {
-        proxy: "rollewtf.dev",
-        browser: "Google Chrome",
+        proxy: "rollewtf16.dev",
+        browser: "Google Chrome Canary",
         notify: true
     });
 });
 
-/* 
+/*
 
 STYLES
 ======
@@ -101,7 +101,7 @@ gulp.task('styles', function() {
 
   });
 
-/* 
+/*
 
 IMAGES
 ======
@@ -118,7 +118,7 @@ gulp.task('images', function() {
 
 });
 
-/* 
+/*
 
 SCRIPTS
 =======
@@ -132,11 +132,9 @@ gulp.task('js', function() {
 
       gulp.src(
         [
-          'bower_components/jquery/dist/jquery.js',
-          'bower_components/respond-minmax/src/respond.js',
-          'bower_components/packery/dist/packery.pkgd.js',
-          jsSrc + '/jquery.tweet.js',
-          jsSrc + '/animatedModal.js',
+          'node_modules/jquery/dist/jquery.js',
+          jsSrc + '/modernizr.js',
+          jsSrc + '/main.js',
           jsSrc + '/scripts.js',
         ])
         .pipe(concat('all.js'))
@@ -146,7 +144,7 @@ gulp.task('js', function() {
 });
 
 
-/* 
+/*
 
 MARKUP
 =======

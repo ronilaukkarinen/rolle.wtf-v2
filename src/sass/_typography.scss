@@ -1,0 +1,91 @@
+// Font awesome icon fonts
+@import '../../node_modules/font-awesome/scss/font-awesome';
+
+// Pennman's mixin for Google Web Fonts
+@import '../../node_modules/sass-web-fonts/web-fonts';
+
+// Typographic modular scale
+@import '../../node_modules/typographic/scss/typographic';
+
+// Google web fonts in use:
+$url: web-fonts-url(
+  ('Roboto':
+    ('300',
+     '300 italic',
+     '400',
+     '400 italic',
+     '500',
+     '500 italic',
+     '700',
+     '700 italic',
+     '900',
+     '900 italic')
+     ),
+  ('Source Sans Pro':
+    ('700',
+    '700 italic')
+  )
+);
+
+@import url($url);
+
+$header-ratio: $golden;
+
+// Invoke typographic
+@include typographic();
+
+// Font smoothing options
+body,
+html * {
+  font-smoothing: antialiased;
+  text-size-adjust: none;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// Heading font stack to config.
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font_headings;
+  color: $color_body;
+  font-weight: 700;
+}
+
+// Text font stack
+p,
+ul,
+ol,
+dl,
+span,
+small,
+blockquote {
+  font-family: $font_base;
+  color: $color_body;
+}
+
+// Typography base settings
+body {
+	word-wrap: break-word;
+}
+
+img {
+	height: auto; // Make sure images are scaled correctly.
+	max-width: 100%; // Adhere to container width.
+	display: block;
+}
+
+// Links
+a {
+	color: $color_links;
+	text-decoration: none;
+	font-weight: 700;
+
+  &:hover {
+    color: $color_hover;
+  }
+}

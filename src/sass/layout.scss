@@ -1,0 +1,498 @@
+// Imports
+@import '../../node_modules/normalize.css/normalize';
+@import '../../node_modules/jeet/scss/jeet/index';
+
+//  Helpers
+@import 'config';
+@import 'mixins';
+@import 'typography';
+
+// Accessibility
+.screen-reader-text {
+  clip: rect(1px 1px 1px 1px);
+  position: absolute !important;
+  transition: all .55s;
+
+  &.skip-link {
+    margin: 5px;
+  }
+}
+
+.screen-reader-text:hover,
+.screen-reader-text:active,
+.screen-reader-text:focus {
+  background-color: #222;
+  color: #fff;
+  box-shadow: none;
+  clip: auto !important;
+  display: block;
+  font-weight: bold;
+  height: auto;
+  left: 0;
+  line-height: normal;
+  padding: 1rem .9375rem;
+  text-decoration: none;
+  top: 0;
+  width: auto;
+  z-index: 100000;
+  outline: none;
+}
+
+// Primary style
+html * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f0f0f0;
+}
+
+header {
+  @include background-cover();
+  height: 400px;
+  line-height: 400px;
+  padding: 40px;
+  text-align: center;
+  background-color: #fff;
+  background-image: url('../images/rolle-beer.jpg');
+  background-repeat: no-repeat;
+  background-position: top;
+  position: relative;
+
+  .shade {
+    opacity: .4;
+    background: #303e49;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  @media only screen and (min-width: 1170px) {
+    height: 80vh;
+    padding: 0;
+  }
+
+  h1 {
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  p {
+    color: #fff;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    text-align: center;
+    font-size: 21px;
+
+    li {
+      display: inline-block;
+      margin-left: 5px;
+      margin-right: 5px;
+      padding: 0;
+
+      a {
+        color: #fff;
+
+        img {
+            height: 19px;
+            margin-top: 3px;
+            top: 3px;
+            position: relative;
+        }
+
+        span {
+          color: #fff;
+        }
+
+        &:hover {
+          opacity: .5;
+
+          img {
+            opacity: .5;
+          }
+        }
+      }
+    }
+  }
+
+  .content {
+    @include centered();
+    line-height: 1.5;
+    position: relative;
+
+    @media only screen and (min-width: 1170px) {
+      @include centered();
+      position: absolute;
+    }
+  }
+}
+
+// Modules - reusable parts of our design
+.container {
+
+  // This class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width
+  width: 90%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.container::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+// Main components
+#timeline {
+  position: relative;
+  padding: 2em 0;
+  margin-top: 0;
+  margin-bottom: 2em;
+
+  @media only screen and (min-width: 1170px) {
+    margin-top: 0;
+    margin-bottom: 3em;
+  }
+
+  &::before {
+    // This is the vertical line
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 18px;
+    height: 100%;
+    width: 4px;
+    background: #d7e4ed;
+
+    @media only screen and (min-width: 1170px) {
+      left: 50%;
+      margin-left: -2px;
+    }
+  }
+}
+
+.timeline-block {
+  position: relative;
+  margin: 2em 0;
+
+  @media only screen and (min-width: 1170px) {
+    margin: 4em 0;
+  }
+
+  h3 {
+    margin-top: 0;
+  }
+
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.timeline-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #454a4f;
+
+  h2 {
+    display: block;
+    width: 34px;
+    height: 34px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    margin-left: -17px;
+    margin-top: -11px;
+    font-size: 16px;
+    color: #fff;
+  }
+}
+
+@media only screen and (min-width: 1170px) {
+  .timeline-icon {
+    width: 60px;
+    height: 60px;
+    left: 50%;
+    margin-left: -30px;
+
+    // Force Hardware Acceleration in WebKit
+    transform: translateZ(0);
+    backface-visibility: hidden;
+  }
+
+  .cssanimations .timeline-icon.is-hidden {
+    visibility: hidden;
+  }
+
+  .cssanimations .timeline-icon.bounce-in {
+    visibility: visible;
+    animation: cd-bounce-1 .6s;
+  }
+}
+
+@keyframes cd-bounce-1 {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(.5);
+    -moz-transform: scale(.5);
+    -ms-transform: scale(.5);
+    -o-transform: scale(.5);
+    transform: scale(.5);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.timeline-content {
+  position: relative;
+  margin-left: 60px;
+  background: #fff;
+  border-radius: .25em;
+  padding-top: 1em;
+  padding-bottom: 0;
+
+  h2 {
+    color: #303e49;
+  }
+
+  p {
+    line-height: 1.6;
+    padding-bottom: 1em;
+    margin: 0;
+
+    img {
+      max-width: 150px;
+      height: auto;
+      float: right;
+      margin-left: 20px;
+      border-radius: 4px;
+
+      @media(max-width: $container-mobile) {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        float: none;
+        margin-left: 0;
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  .date {
+    float: left;
+    padding: .5em 0;
+    opacity: .7;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 16px;
+    right: 100%;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-right: 7px solid #fff;
+  }
+}
+
+.timeline-content:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+
+.timeline-content p,
+.timeline-content .read-more,
+.timeline-content .date {
+  font-size: .8125rem;
+}
+
+.timeline-content .read-more,
+.timeline-content .date {
+  display: inline-block;
+}
+
+.no-touch .timeline-content .read-more:hover {
+  background-color: #bac4cb;
+}
+
+@media only screen and (min-width: 768px) {
+  .timeline-content h2 {
+    font-size: 1.25rem;
+  }
+
+  .timeline-content p {
+    font-size: 1rem;
+  }
+
+  .timeline-content .read-more,
+  .timeline-content .date {
+    font-size: .875rem;
+  }
+}
+
+@media only screen and (min-width: 1170px) {
+  .timeline-content {
+    margin-left: 0;
+    padding-top: 1.6em;
+    padding-left: 1.6em;
+    padding-right: 1.6em;
+    padding-bottom: 0;
+    width: 45%;
+
+    p {
+      padding-bottom: 1.6em;
+      margin: 0;
+    }
+  }
+
+  .timeline-content::before {
+    top: 24px;
+    left: 100%;
+    border-color: transparent;
+    border-left-color: #fff;
+  }
+
+  .timeline-content .read-more {
+    float: left;
+  }
+
+  .timeline-content .date {
+    position: absolute;
+    width: 100%;
+    left: 122%;
+    top: 6px;
+    font-size: 1rem;
+  }
+
+  .timeline-block:nth-child(even) .timeline-content {
+    float: right;
+  }
+
+  .timeline-block:nth-child(even) .timeline-content::before {
+    top: 24px;
+    left: auto;
+    right: 100%;
+    border-color: transparent;
+    border-right-color: #fff;
+  }
+
+  .timeline-block:nth-child(even) .timeline-content .read-more {
+    float: right;
+  }
+
+  .timeline-block:nth-child(even) .timeline-content .date {
+    left: auto;
+    right: 122%;
+    text-align: right;
+  }
+
+  .cssanimations .timeline-content.is-hidden {
+    visibility: hidden;
+  }
+
+  .cssanimations .timeline-content.bounce-in {
+    visibility: visible;
+    animation: cd-bounce-2 .6s;
+  }
+}
+
+@media only screen and (min-width: 1170px) {
+  // Inverse bounce effect on even content blocks
+  .cssanimations .timeline-block:nth-child(even) .timeline-content.bounce-in {
+    animation: cd-bounce-2-inverse .6s;
+  }
+}
+
+@keyframes cd-bounce-2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100px);
+    -moz-transform: translateX(-100px);
+    -ms-transform: translateX(-100px);
+    -o-transform: translateX(-100px);
+    transform: translateX(-100px);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translateX(20px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes cd-bounce-2-inverse {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(100px);
+    -moz-transform: translateX(100px);
+    -ms-transform: translateX(100px);
+    -o-transform: translateX(100px);
+    transform: translateX(100px);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translateX(-20px);
+    -moz-transform: translateX(-20px);
+    -ms-transform: translateX(-20px);
+    -o-transform: translateX(-20px);
+    transform: translateX(-20px);
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
