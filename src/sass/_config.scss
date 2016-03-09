@@ -10,9 +10,9 @@ $min-font: 16px;
 $max-font: 19px;
 
 // Font family stack
-$font_base: "Roboto", "Helvetica Neue", Helvetica, sans-serif;
-$font_headings: "Source Sans Pro", "Helvetica Neue", Helvetica, sans-serif;
-$font_alt: "Roboto", "Helvetica Neue", Helvetica, sans-serif;
+$font_base: 'brandon-grotesque', 'Roboto', 'Helvetica Neue', Helvetica, sans-serif;
+$font_headings: 'brandon-grotesque', 'Source Sans Pro', 'Helvetica Neue', Helvetica, sans-serif;
+$font_alt: 'brandon-grotesque', 'Roboto', 'Helvetica Neue', Helvetica, sans-serif;
 
 // Form settings
 $color_button_bg: #262626;

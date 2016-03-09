@@ -30,6 +30,9 @@
     <!--[if lt IE 9]>
         <script src="js/vendor/html5-3.6-respond-1.1.0.min.js"></script>
     <![endif]-->
+
+    <script src="https://use.typekit.net/ixg4duh.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
 </head>
 <body>
 	<header>
@@ -37,9 +40,9 @@
 
       <div class="content">
 
-		    <h1>rolle, kuka?</h1>
+		    <h1>Roni Laukkarinen</h1>
 
-        <p>Roni <strong>&lt;rolle&gt;</strong> Laukkarinen. Olen Full stack / Front End web-devaaja <a href="https://www.dude.fi">Dudella</a> (eli ihan vaan <i>koodari</i> tai <i>nörtti</i>), sosiaalisen median dinosaurus, craft beer -intoilija, musa- ja leffafriikki. Rakennan kauniita ja toimivia verkkosivuja sekä tweettaan paljon.</p>
+        <p>Olen Roni <strong>&lt;rolle&gt;</strong> Laukkarinen, Full stack / Front End web-devaaja <a href="https://www.dude.fi">Dudella</a> (eli ihan vaan <i>koodari</i> tai <i>nörtti</i>), sosiaalisen median dinosaurus, craft beer -intoilija, musa- ja leffafriikki. Rakennan kauniita ja toimivia verkkosivuja sekä tweettaan paljon.</p>
 
         <ul class="some">
           <li><a href="skype:roni.laukkarinen"><span class="fa fa-skype"></span><span class="screen-reader-text">Add me to Skype</a></li>
@@ -130,8 +133,8 @@
 			</div> <!-- timeline-icon -->
 
 			<div class="timeline-content">
-				<p>This is the content of the last section</p>
-				<span class="date">WordPress julkaistaan</span>
+				<p>Minulla on jo kokemusta tekstitiedosto-php-pohjaisista sisällönhallintajärjestelmistä, cutenewsistä, sekä moderneista CMSistä kuten Textpattern, mutta vasta version 2.0 myötä innostuin toden teolla WordPressistä ja sille tielle jäin.</p>
+				<span class="date">WordPress julkaistaan, bloggausinto kasvaa</span>
 			</div> <!-- timeline-content -->
 		</div> <!-- timeline-block -->
 	</section> <!-- timeline -->

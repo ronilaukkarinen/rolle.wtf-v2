@@ -177,7 +177,7 @@ header {
     left: 18px;
     height: 100%;
     width: 4px;
-    background: #d7e4ed;
+    background: rgba(#454a4f, .3);
 
     @media only screen and (min-width: 1170px) {
       left: 50%;
@@ -224,15 +224,16 @@ header {
 
   h2 {
     display: block;
-    width: 34px;
-    height: 34px;
     position: relative;
-    left: 50%;
-    top: 50%;
-    margin-left: -17px;
-    margin-top: -11px;
-    font-size: 16px;
+    text-align: center;
+    top: 5px;
+    font-size: 15px;
     color: #fff;
+
+    @media(max-width: 1170px) {
+      top: -1px;
+      font-size: 12px;
+    }
   }
 }
 
@@ -292,6 +293,8 @@ header {
   background: #fff;
   border-radius: .25em;
   padding-top: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
   padding-bottom: 0;
 
   h2 {
@@ -309,6 +312,7 @@ header {
       float: right;
       margin-left: 20px;
       border-radius: 4px;
+      margin-bottom: 1.6em;
 
       @media(max-width: $container-mobile) {
         width: 100%;
