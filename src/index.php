@@ -123,7 +123,7 @@
 
 			<div class="timeline-content">
 				<p>Aloitan pianonsoiton, innostun ensimmäistä kertaa jostain muustakin kuin konemusiikista. Käyn viikottain <a href="https://fi.wikipedia.org/wiki/Risto_Urrio">Risto Urrion</a> kirjailijakerhossa Jyväskylän kirjailijatalolla. Joitakin runojani näkyy jopa Keskisuomalaisessakin. Nettisivujen väsääminen on kaikista rakkain harrastukseni ja alan tekemään pikkupalkkioista hommia tuttaville.</p>
-				<span class="date">Feb 18</span>
+				<span class="date">Klassinen piano, kirjoittaminen ja nettisivut rakkaimmat harrastukset</span>
 			</div> <!-- timeline-content -->
 		</div> <!-- timeline-block -->
 
@@ -133,10 +133,66 @@
 			</div> <!-- timeline-icon -->
 
 			<div class="timeline-content">
-				<p>Minulla on jo kokemusta tekstitiedosto-php-pohjaisista sisällönhallintajärjestelmistä, cutenewsistä, sekä moderneista CMSistä kuten Textpattern, mutta vasta version 2.0 myötä innostuin toden teolla WordPressistä ja sille tielle jäin.</p>
+				<p>Minulla on jo kokemusta tekstitiedosto-php-pohjaisista sisällönhallintajärjestelmistä, cutenewsistä, sekä moderneista CMSistä kuten Textpattern, mutta vasta version 2.0 myötä innostun toden teolla WordPressistä ja sille tielle jäänkin.</p>
 				<span class="date">WordPress julkaistaan, bloggausinto kasvaa</span>
 			</div> <!-- timeline-content -->
 		</div> <!-- timeline-block -->
+
+    <div class="timeline-block">
+			<div class="timeline-icon">
+        <h2>2007</h2>
+			</div> <!-- timeline-icon -->
+
+			<div class="timeline-content">
+				<p>Valmistun ylioppilaaksi Cygnaeus-lukiosta kohtalaisin paperein, ainoastaan tietotekniikasta ja kuvamataidosta vedän täysiä pisteitä, lyhyt matematiikka hipoen läpi. Tiedän että backend-ohjelmoijaa minusta ei ainakaan tule, mutta verkkosivuissa olen yhä mielestäni haka. Tutustun Espoosta Jyväskylään muuttaneeseen Veeraan IRCissä ja suhteesta kehkeytyy jotain vakavempaa.</p>
+				<span class="date">Ylioppilas, tyttöystävä</span>
+			</div> <!-- timeline-content -->
+		</div> <!-- timeline-block -->
+
+    <div class="timeline-block">
+      <div class="timeline-icon">
+        <h2>2008</h2>
+      </div> <!-- timeline-icon -->
+
+      <div class="timeline-content">
+        <p>Pääsen heti lakin saatuani sivariin, jonka suoritan Jyväskylän Yliopiston tietojenkäsittelytieteiden laitoksella. Opin tuon vuoden aikana paljon. Pitkään kytenyt masennus vie palveluskelpoisuuteni ja saan loppuajasta vapautuksen paria erilaista masennukseen liittyvää diagnoosia vastaan. Jään sosiaalisten tilanteiden pelon aiheuttaman työkyvyttömyyden vuoksi sairaslomalle. Bloggaan paljon myös <a href="http://www.rollemaa.org/avainsana/sivari/">sivariin</a> liittyvistä aiheista. Menen Veeran kanssa kihloihin ja kesällä naimisiin.</p>
+        <span class="date">Siviilipalvelus Jyväskylän Yliopistolla, kihlaus</span>
+      </div> <!-- timeline-content -->
+    </div> <!-- timeline-block -->
+
+    <div class="timeline-block">
+      <div class="timeline-icon">
+        <h2>2009</h2>
+      </div> <!-- timeline-icon -->
+
+      <div class="timeline-content">
+        <p>Oltuani tovin sairaslomalla, käyn työkkärissä pari kurssia ja haen Jyväskylän Data Group -tietotekniikkaliikkeeseen harjoitteluun. Kaikki sujuu loistavasti, mutta minua ei palkata. Palloilen rahattomana työttömänä hakien töitä, masentuen entisestään. Luulen, että minulla ei ole toivoa. Samaan aikaan esikoistyttäreni Lotta Iines syntyy maailmaan.</p>
+        <span class="date">Pätkätyöt, esikoinen syntyy</span>
+      </div> <!-- timeline-content -->
+    </div> <!-- timeline-block -->
+
+    <div class="timeline-block">
+      <div class="timeline-icon">
+        <h2>2010</h2>
+      </div> <!-- timeline-icon -->
+
+      <div class="timeline-content">
+        <p>Minut kutsutaan työhaastatteluun Helsinkiin, ohjelmistotaloon, joka toteuttaa sosiaalisen median tyyppistä SaaS-palvelua. Olen innoissani, kerrankin oman alan töitä. Työpaikka on Jyväskylässä ja pääsen aloittamaan heti. Web-ala nostaa vasta päätään Suomessa, mutta kuvittelen että minulla kävi tuuri, sillä pääsen ylioppilaan papereilla sisään. Päivittäinen harrastuneisuuteni oli kuitenkin avaintekijä.</p>
+        <span class="date">Ensimmäinen oikea työpaikka</span>
+      </div> <!-- timeline-content -->
+    </div> <!-- timeline-block -->
+
+    <div class="timeline-block">
+      <div class="timeline-icon">
+        <h2>2012</h2>
+      </div> <!-- timeline-icon -->
+
+      <div class="timeline-content">
+        <p>Teen kovasti töitä ja minusta tuntuu että se ei näy tarpeeksi. Olen alkanut parantua masennuksesta, saamaan lisää itsetuntoa ja itseluottamusta sekä kykyä osata olla ylpeä omasta työstään.</p>
+        <span class="date">Twitter Inc. kutsuu työhaastatteluun</span>
+      </div> <!-- timeline-content -->
+    </div> <!-- timeline-block -->
+
 	</section> <!-- timeline -->
 
   <script>
