@@ -188,8 +188,30 @@
       </div> <!-- timeline-icon -->
 
       <div class="timeline-content">
-        <p>Teen kovasti töitä ja minusta tuntuu että se ei näy tarpeeksi. Olen alkanut parantua masennuksesta, saamaan lisää itsetuntoa ja itseluottamusta sekä kykyä osata olla ylpeä omasta työstään.</p>
+        <p>Teen kovasti töitä, mutta kaipaan uusia haasteita. Olen alkanut parantua masennuksesta, saamaan lisää itsetuntoa ja itseluottamusta sekä kykyä osata olla ylpeä omasta työstään. Twitter on ostanut Tweetdeck-yrityksen ja huomaa Tweetdeck-forkkini GitHubista, jonka myötä tarjoaisi töitä Lontoosta, mutta kieltäydyn, koska visiot oman yrityksen perustamisesta ovat jo pitkällä.</p>
         <span class="date">Twitter Inc. kutsuu työhaastatteluun</span>
+      </div> <!-- timeline-content -->
+    </div> <!-- timeline-block -->
+
+    <div class="timeline-block">
+      <div class="timeline-icon">
+        <h2>2013</h2>
+      </div> <!-- timeline-icon -->
+
+      <div class="timeline-content">
+        <p>Perustan Juha Laitisen kanssa digitoimiston ja avaamme heti toiminnan Jyväskylän keskustassa. Homma lähteekin hyvin starttiin alihankinnan kautta ja pian omiakin asiakkuuksia alkaa kertyä.</p>
+        <span class="date">Ensimmäinen yritys, Digitoimisto Dude Oy perustetaan</span>
+      </div> <!-- timeline-content -->
+    </div> <!-- timeline-block -->
+
+    <div class="timeline-block">
+      <div class="timeline-icon">
+        <h2>2016</h2>
+      </div> <!-- timeline-icon -->
+
+      <div class="timeline-content">
+        <p>Olen toteuttanut yli sata asiakasprojektia ja samalla kehittänyt verkkopalvelua, joka ilmoittaa käyttäjää verkkopalvelun hidastumisesta tai kaatumisesta. SaaS-palvelulle perustetaan yritys, Admin Labs Oy.</p>
+        <span class="date">Toinen yritys, Admin Labs Oy perustetaan</span>
       </div> <!-- timeline-content -->
     </div> <!-- timeline-block -->
 
