@@ -17,9 +17,12 @@ $(document).ready(function(){
 		template: "{avatar} Viimeksi tweetattu {time}."
 	});
 
-	var s = skrollr.init({
-		forceHeight: false
-	});
+	if (Modernizr.touch) {
+	} else {
+		var s = skrollr.init({
+			forceHeight: false
+		});
+	}
 
 	var timelineBlocks = $('.timeline-block'),
 		offset = 0.8;
