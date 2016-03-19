@@ -360,7 +360,7 @@ body {
     color: #fff;
 
     @media (max-width: 1170px) {
-      top: -1px;
+      top: 4px;
       font-size: 12px;
     }
   }
@@ -623,6 +623,13 @@ body {
   bottom: 300px;
   right: 0;
 
+  @media (max-width: 1170px) {
+    position: static;
+    width: 100%;
+    padding-left: 60px;
+    margin-bottom: 2.6em;
+  }
+
   p {
     color: darken(#bdbfc0, 25%);
     line-height: 1.5;
@@ -652,6 +659,12 @@ body {
   position: absolute;
   bottom: 50px;
   right: 0;
+
+  @media (max-width: 1170px) {
+    position: static;
+    width: 100%;
+    padding-left: 60px;
+  }
 
   p {
     font-size: 15px;
