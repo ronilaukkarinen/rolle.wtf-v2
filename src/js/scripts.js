@@ -1,3 +1,15 @@
+/**
+ * http://www.mattcromwell.com/detecting-mobile-devices-javascript/
+ *
+ **/
+var isMobile = {
+Android: function() { return navigator.userAgent.match(/Android/i); },
+BlackBerry: function() { return navigator.userAgent.match(/BlackBerry/i); },
+iOS: function() { return navigator.userAgent.match(/iPhone|iPad|iPod/i); },
+Opera: function() { return navigator.userAgent.match(/Opera Mini/i); },
+Windows: function() { return navigator.userAgent.match(/IEMobile/i); },
+any: function() { return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows()); } };
+
 $(document).ready(function(){
 
 	// Twitter update
@@ -17,11 +29,14 @@ $(document).ready(function(){
 		template: "{avatar} Viimeksi tweetattu {time}."
 	});
 
-	if (Modernizr.touch) {
+	if ( isMobile.any() ) {
 	} else {
-		var s = skrollr.init({
-			forceHeight: false
-		});
+
+	// Scrolling animations
+	skrollr.init({
+		forceHeight: false
+	});
+
 	}
 
 	var timelineBlocks = $('.timeline-block'),
