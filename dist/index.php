@@ -1,10 +1,12 @@
 <?php
 if(file_exists('/var/www/rolle.wtf-2016/vendor')) :
 	include('/var/www/rolle.wtf-2016/vendor/autoload.php');
+  $cachefile = '/var/www/rolle.wtf-2016/dist/cached-index.html';
 else :
 	include('/var/www/rolle.wtf/deploy/vendor/autoload.php');
+  $cachefile = '/var/www/rolle.wtf/public_html/cached-index.html';
 endif;
-$cachefile = 'cached-index.html';
+
 $cachetime = 1800;
 if (file_exists($cachefile) && time() - $cachetime < filemtime($cachefile)) {
     include($cachefile);
