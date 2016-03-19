@@ -84,6 +84,10 @@ body {
     position: absolute;
     bottom: 7%;
 
+    @media(max-width: $container-mobile) {
+      display: none;
+    }
+
     .animated-mouse-pointer {
       position: absolute;
       width: 6px;
