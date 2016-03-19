@@ -1,12 +1,12 @@
 <?php
-// $cachefile = 'cached-index.html';
-// $cachetime = 1800;
-// if (file_exists($cachefile) && time() - $cachetime < filemtime($cachefile)) {
-//     include($cachefile);
-//     echo "<!-- Amazing hand crafted super cache, generated ".info('H:i', filemtime($cachefile))." -->";
-//     exit;
-// }
-// ob_start();
+$cachefile = 'cached-index.html';
+$cachetime = 1800;
+if (file_exists($cachefile) && time() - $cachetime < filemtime($cachefile)) {
+    include($cachefile);
+    echo "<!-- Amazing hand crafted super cache, generated ".info('H:i', filemtime($cachefile))." -->";
+    exit;
+}
+ob_start();
 ?>
 <!doctype html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -399,8 +399,8 @@
 </body>
 </html>
 <?php
-// $fp = fopen($cachefile, 'w');
-// fwrite($fp, ob_get_contents());
-// fclose($fp);
-// ob_end_flush();
+$fp = fopen($cachefile, 'w');
+fwrite($fp, ob_get_contents());
+fclose($fp);
+ob_end_flush();
 ?>
