@@ -29,6 +29,7 @@
     "html5shiv": "*",
     "jeet": "*",
     "jquery": "*",
+    "js-cookie": "^2.1.0",
     "normalize.css": "*",
     "sass-web-fonts": "^2.0.1",
     "skrollr": "^0.6.26",

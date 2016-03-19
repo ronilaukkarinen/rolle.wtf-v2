@@ -32,7 +32,7 @@
 
       <div class="content">
 
-		    <h1>Rolle.</h1>
+		    <h1 lang="en">Rolle.</h1>
 
         <p>Olen Roni <strong>&lt;rolle&gt;</strong> Laukkarinen, Full stack / Front End web-devaaja (eli ihan vaan <i>koodari</i> tai <i>nörtti</i>), sosiaalisen median dinosaurus, craft beer -intoilija, musa- ja leffafriikki. Rakennan kauniita ja toimivia verkkosivuja sekä tweettaan paljon.</p>
 
@@ -407,6 +407,14 @@
   <script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
   <script src="https://use.typekit.net/ixg4duh.js"></script>
   <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+  <script>
+		var lang = new Lang();
+		lang.dynamic('fi', 'js/langpack/fi.json');
+		lang.init({
+			defaultLang: 'en'
+		});
+	</script>
 
 </body>
 </html>
