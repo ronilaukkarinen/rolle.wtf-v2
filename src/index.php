@@ -53,7 +53,7 @@ ob_start();
         <ul class="some">
           <li><a href="skype:roni.laukkarinen"><span class="fa fa-skype"></span><span class="screen-reader-text">Add me to Skype</a></li>
           <li><a target=_"blank" href="https://github.com/ronilaukkarinen"><span class="fa fa-github"></span><span class="screen-reader-text">See my codes at GitHub</a></li>
-          <li><a href="https://wakatime.com/@rolle"><img src="images/wakatime.svg" alt="WakaTime" /><span class="screen-reader-text">See my codes at WakaTime</a></li>
+          <li><a target=_"blank" href="https://wakatime.com/@rolle"><img src="images/wakatime.svg" alt="WakaTime" /><span class="screen-reader-text">See my codes at WakaTime</a></li>
           <li><a target=_"blank" href="https://twitter.com/rolle"><span class="fa fa-twitter"></span><span class="screen-reader-text">Check out my tweets</a></li>
           <li><a target=_"blank" href="https://untappd.com/user/rolle"><img src="images/untappd.svg" alt="Untappd" /><span class="screen-reader-text">Check out my beer checkins</a></li>
           <li><a target=_"blank" href="http://rolle.vsco.co/"><img src="images/vsco.svg" alt="VSCO" /><span class="screen-reader-text">Check out my photos at VSCO</a></li>
@@ -86,7 +86,7 @@ ob_start();
         <div class="content">
 
           <h2>Yrittäjä.</h2>
-          <p><a href="https://www.dude.fi">Digitoimisto Dude Oy</a></p>
+          <p><a target=_"blank" href="https://www.dude.fi">Digitoimisto Dude Oy</a></p>
 
         </div><!-- .content -->
 
@@ -97,7 +97,7 @@ ob_start();
         <div class="content">
 
           <h2>Leffaihminen.</h2>
-          <p><a href="http://www.rollemaa.org/leffat">Rollen leffablogi</a></p>
+          <p><a target=_"blank" href="http://www.rollemaa.org/leffat">Rollen leffablogi</a></p>
 
         </div><!-- .content -->
 
@@ -108,7 +108,7 @@ ob_start();
         <div class="content">
 
           <h2>Olutharrastaja.</h2>
-          <p><a href="https://www.huurteinen.fi">Huurteinen.fi</a></p>
+          <p><a target=_"blank" href="https://www.huurteinen.fi">Huurteinen.fi</a></p>
 
         </div><!-- .content -->
 
@@ -119,7 +119,7 @@ ob_start();
         <div class="content">
 
           <h2>Koodari.</h2>
-          <p><a href="https://github.com/ronilaukkarinen">GitHub</a></p>
+          <p><a target=_"blank" href="https://github.com/ronilaukkarinen">GitHub</a></p>
 
         </div><!-- .content -->
 
@@ -377,7 +377,30 @@ ob_start();
         </div>
 
         <footer class="footer">
-          <p>Tämän sivun rakensi tietämyksensä pohjalta puhtaana käsityönä Roni "Rolle" Laukkarinen. Koodi on 100% open sourcea ja löytyy <a target=_"blank" href="https://github.com/ronilaukkarinen/rolle.wtf-v2"><span class="fa fa-github"></span> GitHubista</a>.</p>
+          <p>Tämän sivun rakensi tietämyksensä pohjalta puhtaana käsityönä Roni "Rolle" Laukkarinen. Koodi on 100% open sourcea ja löytyy <a target=_"blank"  href="https://github.com/ronilaukkarinen/rolle.wtf-v2"><span class="fa fa-github"></span> GitHubista</a>.
+
+                              <?php
+                                  $url = "https://github.com/ronilaukkarinen/rolle.wtf-v2/commits/master.atom";
+                                  $rss = simplexml_load_file($url);
+                              ?>
+
+                                  <?php if($rss) : ?>
+
+                                      <p>Viimeisin rivi koodia <i><?php
+
+                                          $updatetime = aika(abs(strtotime($rss->entry->updated)), time());
+                                          if(!empty($updatetime)) :
+                                              $updatetime = " ". aika(abs(strtotime($rss->entry->updated)), time()+60) . " ";
+                                          else :
+                                              $updatetime = " tovi ";
+                                          endif;
+
+                                          echo $updatetime;
+
+                                      ?></i> sitten.</p>
+
+                                  <?php endif; ?>
+                          </p>
         </footer>
 
     	</section> <!-- timeline -->
