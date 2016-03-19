@@ -89,7 +89,12 @@ gulp.task('styles', function() {
   gulp.src(sassFile)
 
   .pipe(sass({
-    outputStyle: 'compressed'
+    outputStyle: 'compressed',
+    includePaths: [
+      'bower_components/',
+      'node_modules/',
+      // require('node-bourbon').includePaths
+    ]    
   }))
 
   .on('error', handleError('styles'))
