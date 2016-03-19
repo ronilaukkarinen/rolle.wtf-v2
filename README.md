@@ -19,3 +19,7 @@ Rolle.wtf is currently cached with static nginx magic and Google Pagespeed nginx
 * [Acadia Untappd SVG](https://github.com/gesteves/acadia/tree/master/source/svg)
 * [megatype](https://github.com/StudioThick/megatype) - Execute typographic structure with ease
 * [Typekit](https://typekit.com/) - Use beautiful fonts in your designs
+
+### Todo
+
+- [ ] English language + language switcher
