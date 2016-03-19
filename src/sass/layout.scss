@@ -213,6 +213,10 @@ body {
     @include span(1/2, $cycle: 2);
     height: 250px;
 
+    @media(max-width: $container-mobile) {
+      @include stack();
+    }
+
     .content {
       @include centered();
       text-align: center;
@@ -585,12 +589,6 @@ body {
   content: '';
   display: table;
   clear: both;
-}
-
-.timeline-content p,
-.timeline-content .read-more,
-.timeline-content .info {
-  font-size: .8125rem;
 }
 
 .timeline-content .read-more,
