@@ -1,5 +1,6 @@
 $(document).ready(function(){
 
+	// Twitter update
 	$(".tweet").tweet({
 		modpath: '/inc/twitter/',
 		username: "rolle",

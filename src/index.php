@@ -161,7 +161,7 @@ ob_start();
         <div class="timeline-content">
           <p><img src="images/pieni.jpg" alt="Minä taaperona." />
             Olen hieman introvertin suuntaan jo tässä vaiheessa. Ujo ja arka. Jo 4 vuotiaana sanon äidilleni keittiön pöydällä "minua ahdistaa".</p>
-            <p>Ikävuoteen 6 mennessä kirjoitan ja luen älyttömiä määriä.Kirjoittamisesta tulee heti rakas harrastus.</p>
+            <p>Ikävuoteen 6 mennessä kirjoitan ja luen älyttömiä määriä. Kirjoittamisesta tulee heti rakas harrastus.</p>
           <p class="info">Rauhallinen ja mietteliäs lapsi</p>
         </div> <!-- timeline-content -->
       </div> <!-- timeline-block -->
@@ -351,7 +351,7 @@ ob_start();
         </div> <!-- timeline-block -->
 
         <div class="timeline-block">
-          <div class="timeline-icon">
+          <div class="timeline-icon">lp wa
             <h2>2016</h2>
           </div> <!-- timeline-icon -->
 

@@ -140,6 +140,7 @@ gulp.task('js', function() {
         [
           'node_modules/jquery/dist/jquery.js',
           'node_modules/skrollr/dist/skrollr.min.js',
+          'vendor/bower_components/jquery-lang-js/js/jquery-lang.js',
           jsSrc + '/modernizr.js',
           jsSrc + '/jquery.tweet.js',
           jsSrc + '/scripts.js',
