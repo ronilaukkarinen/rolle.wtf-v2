@@ -1,8 +1,19 @@
 {
 	"token": {
 		"I'm Roni":"Olen Roni",
-		"":" <strong>&lt;rolle&gt;</strong> Laukkarinen, Full stack / Front End web-devaaja (eli ihan vaan <i>koodari</i> tai <i>nörtti</i>), sosiaalisen median dinosaurus, craft beer -intoilija, musa- ja leffafriikki. Rakennan kauniita ja toimivia verkkosivuja sekä tweettaan paljon.",
-		"Entrepreneur.":"Yrittäjä."
+		"Full stack / Front End web developer":"Full stack / Front End web-devaaja",
+		"coder":"koodari",
+		"or":"tai",
+		"nerd":"nörtti",
+		"which means some kind of a":"eli ihan vaan",
+		"dinosaur in social media age, craft beer enthusiast, music- and movie digger. I build beautiful and functional websites and tweet a lot.":"sosiaalisen median dinosaurus, craft beer -intoilija, musa- ja leffafriikki. Rakennan kauniita ja toimivia verkkosivuja sekä tweettaan paljon.",
+		"Please read further to know more.":"Lue lisää tietääksesi enemmän.",
+		"Filmgoer":"Leffaihminen.",
+		"Digital agency":"Digitoimisto Dude Oy",
+		"Entrepreneur.":"Yrittäjä.",
+		"My movie blog":"Rollen leffablogi",
+		"Craft beer enthusiast":"Olutharrastaja.",
+		"Koodari.":"Coder."
 	},
 	"regex": [
 		["Budget", "งบประมาณ"],

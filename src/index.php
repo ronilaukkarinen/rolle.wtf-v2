@@ -36,7 +36,7 @@
 
         <!-- <a href="#lang-en" onclick="window.lang.change('en'); return false;">en</a> | <a href="#lang-fi" onclick="window.lang.change('fi'); return false;">fi</a> -->
 
-        <p><span lang="en">I'm Roni</a> <strong>&lt;rolle&gt;</strong> Laukkarinen, Full stack / Front End web developer (<i>coder</i> or <i>nerd</i> as they say), dinosaur in social media age, craft beer enthusiast, music- and movie digger. I build beautiful and functional websites and tweet a lot.</p>
+        <p><span lang="en">I'm Roni</a> <strong>&lt;rolle&gt;</strong> Laukkarinen, <span lang="en">Full stack / Front End web developer</span> (<span lang="en">which means some kind of a</span> <i lang="en">coder</i> <span lang="en">or</span> <i lang="en">nerd</i>), <span lang="en">dinosaur in social media age, craft beer enthusiast, music- and movie digger. I build beautiful and functional websites and tweet a lot.</span></p>
 
         <ul class="some">
           <li><a href="skype:roni.laukkarinen"><span class="fa fa-skype"></span><span class="screen-reader-text">Add me to Skype</a></li>
@@ -60,7 +60,7 @@
       </div><!-- .content -->
 
       <div class="animated-mouse" data-0="opacity: 1;" data-200="opacity: 0;">
-          <div class="animated-mouse-pointer"><p class="screen-reader-text">Please read further to know more.</p></div>
+          <div class="animated-mouse-pointer"><p class="screen-reader-text" lang="en">Please read further to know more.</p></div>
       </div>
 
 	</header>
@@ -74,7 +74,7 @@
         <div class="content">
 
           <h2 lang="en">Entrepreneur.</h2>
-          <p><a target=_"blank" href="https://www.dude.fi">Digitoimisto Dude Oy</a></p>
+          <p><a target=_"blank" href="https://www.dude.fi" lang="en">Digital agency</a></p>
 
         </div><!-- .content -->
 
@@ -84,8 +84,8 @@
 
         <div class="content">
 
-          <h2>Leffaihminen.</h2>
-          <p><a target=_"blank" href="http://www.rollemaa.org/leffat">Rollen leffablogi</a></p>
+          <h2 lang="en">Filmgoer</h2>
+          <p><a target=_"blank" href="http://www.rollemaa.org/leffat" lang="en">My movie blog</a></p>
 
         </div><!-- .content -->
 
@@ -95,7 +95,7 @@
 
         <div class="content">
 
-          <h2>Olutharrastaja.</h2>
+          <h2 lang="en">Craft beer enthusiast.</h2>
           <p><a target=_"blank" href="https://www.huurteinen.fi">Huurteinen.fi</a></p>
 
         </div><!-- .content -->
@@ -106,7 +106,7 @@
 
         <div class="content">
 
-          <h2>Koodari.</h2>
+          <h2 lang="en">Koodari.</h2>
           <p><a target=_"blank" href="https://github.com/ronilaukkarinen">GitHub</a></p>
 
         </div><!-- .content -->
