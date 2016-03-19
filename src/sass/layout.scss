@@ -433,6 +433,8 @@ header {
   img {
     width: 100%;
     height: auto;
+    margin-bottom: 1.6em;
+    border-radius: 4px;
   }
 
   h2 {
@@ -463,7 +465,7 @@ header {
     }
   }
 
-  .date {
+  .info {
     float: left;
     padding: .5em 0;
     opacity: .7;
@@ -489,12 +491,12 @@ header {
 
 .timeline-content p,
 .timeline-content .read-more,
-.timeline-content .date {
+.timeline-content .info {
   font-size: .8125rem;
 }
 
 .timeline-content .read-more,
-.timeline-content .date {
+.timeline-content .info {
   display: inline-block;
 }
 
@@ -512,7 +514,7 @@ header {
   }
 
   .timeline-content .read-more,
-  .timeline-content .date {
+  .timeline-content .info {
     font-size: .875rem;
   }
 }
@@ -561,7 +563,7 @@ header {
     float: left;
   }
 
-  .timeline-content .date {
+  .timeline-content .info {
     position: absolute;
     width: 100%;
     left: 122%;
@@ -585,7 +587,7 @@ header {
     float: right;
   }
 
-  .timeline-block:nth-child(even) .timeline-content .date {
+  .timeline-block:nth-child(even) .timeline-content .info {
     left: auto;
     right: 122%;
     text-align: right;

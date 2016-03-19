@@ -3,7 +3,7 @@
 // $cachetime = 1800;
 // if (file_exists($cachefile) && time() - $cachetime < filemtime($cachefile)) {
 //     include($cachefile);
-//     echo "<!-- Amazing hand crafted super cache, generated ".date('H:i', filemtime($cachefile))." -->";
+//     echo "<!-- Amazing hand crafted super cache, generated ".info('H:i', filemtime($cachefile))." -->";
 //     exit;
 // }
 // ob_start();
@@ -139,7 +139,7 @@
     				<p>Commodore 64:n ja Sinclairin ZX Spectrumin kilpailija Amstrad julkaisi <b>Amstrad CPC</b>-koneensa vuonna 1984, jonka jälkeen isäni osti koneen ja ryhtyi koodaamaan BASICia, koska ei ollut mikään HC-tietokonepelaaja vaan enemmänkin kiinnostunut mitä kaikkea koneella voi tehdä.</p>
 
             <img src="images/amstrad.jpg" alt="Amstrad CPC" />
-            <p class="date">Juuri ennen syntymää</p>
+            <p class="info">Juuri ennen syntymää</p>
     			</div> <!-- timeline-content -->
     		</div> <!-- timeline-block -->
 
@@ -151,9 +151,22 @@
     			<div class="timeline-content">
     				<p><img src="images/rolle-born.jpg" alt="Synnyn" />
               Näen päivänvalon Keski-Suomen keskussairaalassa, Jyväskyl&auml;ss&auml;. Synnyn terveenä poikana nuorelle sairaanhoitajaäidille ja veturinkuljettajaisälle.</p>
-            <p class="date">Syntymä</p>
+            <p class="info">Syntymä</p>
     			</div> <!-- timeline-content -->
     		</div> <!-- timeline-block -->
+
+        <div class="timeline-block">
+    			<div class="timeline-icon">
+    				<h2>1992</h2>
+    			</div> <!-- timeline-icon -->
+
+        <div class="timeline-content">
+          <p><img src="images/pieni.jpg" alt="Minä taaperona." />
+            Olen hieman introvertin suuntaan jo tässä vaiheessa. Ujo ja arka. Jo 4 vuotiaana sanon äidilleni keittiön pöydällä "minua ahdistaa".</p>
+            <p>Ikävuoteen 6 mennessä kirjoitan ja luen älyttömiä määriä.Kirjoittamisesta tulee heti rakas harrastus.</p>
+          <p class="info">Rauhallinen ja mietteliäs lapsi</p>
+        </div> <!-- timeline-content -->
+      </div> <!-- timeline-block -->
 
     		<div class="timeline-block">
     			<div class="timeline-icon">
@@ -167,13 +180,13 @@
               <iframe width="560" height="315" src="http://www.youtube.com/embed/2Akso4taEbA?vq=hd1080&modestbranding=1&iv_load_policy=3&showinfo=0&theme=light&color=white" frameborder="0"></iframe>
             </div>
 
-            <p>Olen rauhallinen ja mietteliäs lapsi, hieman introvertin suuntaan jo tässä vaiheessa. Ujo ja arka. Täyttäessäni 6 kirjoitan ja luen älyttömiä määriä. Kirjoittamisesta tulee heti rakas harrastus.</p>
-            <p class="date">Ensimmäiset tietokonepelit.<br />
-            Rolling Ronny.<br />
-            One Must Fall 2097.<br />
-            Jagged Alliance.<br />
-            Command &amp; Conquer.<br />
-            Sierra</p>
+            <p class="info">Ensimmäiset tietokonepelit,<br />
+            Rolling Ronny<br />
+            One Must Fall 2097<br />
+            Jagged Alliance<br />
+            Command &amp; Conquer<br />
+            Sierra<br />
+            ...</p>
     			</div> <!-- timeline-content -->
     		</div> <!-- timeline-block -->
 
@@ -184,7 +197,12 @@
 
     			<div class="timeline-content">
     				<p>Isäni luo minulle ja veljelleni ensimmäisen kotisivutilan ja sähköpostit Nicin palvelimille. Julkaisen ensimmäiset nettisivuni. Olen tuolloin noin kymmenvuotias. Palvelin on pystyssä <a href="http://www.nic.fi/~ronny/">tähänkin päivään saakka</a>.</p>
-            <p class="date">Ensimmäiset kotisivut</p>
+
+            <img src="images/90s.jpg" alt="Kuvassa käytän vanhaa 90-luvun tietokonetta." />
+            <p class="info">Ensimmäiset kotisivut,<br />
+            Adobe Pagemill<br />
+            Notepad<br />
+            HTML, inline CSS</p>
     			</div> <!-- timeline-content -->
     		</div> <!-- timeline-block -->
 
@@ -195,7 +213,7 @@
 
     			<div class="timeline-content">
     				<p>Aloitan pianonsoiton, innostun ensimmäistä kertaa jostain muustakin kuin konemusiikista. Käyn viikottain <a href="https://fi.wikipedia.org/wiki/Risto_Urrio">Risto Urrion</a> kirjailijakerhossa Jyväskylän kirjailijatalolla. Joitakin runojani näkyy jopa Keskisuomalaisessakin. Nettisivujen väsääminen on kaikista rakkain harrastukseni ja alan tekemään pikkupalkkioista hommia tuttaville.</p>
-    				<p class="date">Klassinen piano, kirjoittaminen ja nettisivut rakkaimmat harrastukset</p>
+    				<p class="info">Klassinen piano, kirjoittaminen ja nettisivut rakkaimmat harrastukset</p>
     			</div> <!-- timeline-content -->
     		</div> <!-- timeline-block -->
 
@@ -206,7 +224,10 @@
 
     			<div class="timeline-content">
     				<p>Minulla on jo kokemusta tekstitiedosto-php-pohjaisista sisällönhallintajärjestelmistä, cutenewsistä, sekä moderneista CMSistä kuten Textpattern, mutta vasta version 2.0 myötä innostun toden teolla WordPressistä ja sille tielle jäänkin.</p>
-    				<p class="date">WordPress julkaistaan, bloggausinto kasvaa</p>
+    				<p class="info">WordPress julkaistaan, bloggausinto kasvaa,<br />
+            Taidot kehittyy<br />
+            PHP<br />
+            JS</p>
     			</div> <!-- timeline-content -->
     		</div> <!-- timeline-block -->
 
@@ -217,7 +238,7 @@
 
     			<div class="timeline-content">
     				<p>Valmistun ylioppilaaksi Cygnaeus-lukiosta kohtalaisin paperein, ainoastaan tietotekniikasta ja kuvamataidosta vedän täysiä pisteitä, lyhyt matematiikka hipoen läpi. Tiedän että backend-ohjelmoijaa minusta ei ainakaan tule, mutta verkkosivuissa olen yhä mielestäni haka. Tutustun Espoosta Jyväskylään muuttaneeseen Veeraan IRCissä ja suhteesta kehkeytyy jotain vakavempaa.</p>
-    				<p class="date">Ylioppilas, tyttöystävä</p>
+    				<p class="info">Ylioppilas, tyttöystävä</p>
     			</div> <!-- timeline-content -->
     		</div> <!-- timeline-block -->
 
@@ -227,8 +248,11 @@
           </div> <!-- timeline-icon -->
 
           <div class="timeline-content">
-            <p>Pääsen heti lakin saatuani sivariin, jonka suoritan Jyväskylän Yliopiston tietojenkäsittelytieteiden laitoksella. Opin tuon vuoden aikana paljon. Pitkään kytenyt masennus vie palveluskelpoisuuteni ja saan loppuajasta vapautuksen paria erilaista masennukseen liittyvää diagnoosia vastaan. Jään sosiaalisten tilanteiden pelon aiheuttaman työkyvyttömyyden vuoksi sairaslomalle. Bloggaan paljon myös <a href="http://www.rollemaa.org/avainsana/sivari/">sivariin</a> liittyvistä aiheista. Menen Veeran kanssa kihloihin ja kesällä naimisiin.</p>
-            <p class="date">Siviilipalvelus Jyväskylän Yliopistolla, kihlaus</p>
+            <p>Pääsen heti lakin saatuani sivariin, jonka suoritan Jyväskylän Yliopiston tietojenkäsittelytieteiden laitoksella. Opin tuon vuoden aikana paljon. Pitkään kytenyt masennus vie palveluskelpoisuuteni ja saan loppuajasta vapautuksen paria erilaista masennukseen liittyvää diagnoosia vastaan.</p>
+
+            <p>Jään sosiaalisten tilanteiden pelon aiheuttaman työkyvyttömyyden vuoksi sairaslomalle. Bloggaan paljon myös <a href="http://www.rollemaa.org/avainsana/sivari/">sivariin</a> liittyvistä aiheista. Menen Veeran kanssa kihloihin ja kesällä naimisiin. Tämä ja edellinen vuosi ovat elämäni vaikeimpia.</p>
+            <p class="info">Siviilipalvelus Jyväskylän Yliopistolla<br />
+            Kihlaus ja häät</p>
           </div> <!-- timeline-content -->
         </div> <!-- timeline-block -->
 
@@ -238,8 +262,12 @@
           </div> <!-- timeline-icon -->
 
           <div class="timeline-content">
-            <p>Oltuani tovin sairaslomalla, käyn työkkärissä pari kurssia ja haen Jyväskylän Data Group -tietotekniikkaliikkeeseen harjoitteluun. Kaikki sujuu loistavasti, mutta minua ei palkata. Palloilen rahattomana työttömänä hakien töitä, masentuen entisestään. Luulen, että minulla ei ole toivoa. Samaan aikaan esikoistyttäreni Lotta Iines syntyy maailmaan.</p>
-            <p class="date">Pätkätyöt, esikoinen syntyy</p>
+            <p>Oltuani tovin sairaslomalla, käyn työkkärissä pari kurssia ja haen Jyväskylän Data Group -tietotekniikkaliikkeeseen harjoitteluun. Kaikki sujuu loistavasti, mutta minua ei palkata. Palloilen rahattomana työttömänä hakien töitä, masentuen entisestään. Luulen, että minulla ei ole toivoa.</p>
+
+            <p>Samaan aikaan esikoistyttäreni Lotta Iines syntyy maailmaan ja saan muuta ajateltavaa koti-isänä.</p>
+            <img src="images/isi-ja-lotta.jpg" alt="Kuvassa olen tyttäreni Lotan kanssa, joka on varmaan noin vuoden ikäinen." />
+            <p class="info">Pätkätyöt<br />
+            Esikoinen syntyy</p>
           </div> <!-- timeline-content -->
         </div> <!-- timeline-block -->
 
@@ -249,8 +277,10 @@
           </div> <!-- timeline-icon -->
 
           <div class="timeline-content">
-            <p>Minut kutsutaan työhaastatteluun Helsinkiin, ohjelmistotaloon, joka toteuttaa sosiaalisen median tyyppistä SaaS-palvelua. Olen innoissani, kerrankin oman alan töitä. Työpaikka on Jyväskylässä ja pääsen aloittamaan heti. Web-ala nostaa vasta päätään Suomessa, mutta kuvittelen että minulla kävi tuuri, sillä pääsen ylioppilaan papereilla sisään. Päivittäinen harrastuneisuuteni oli kuitenkin avaintekijä.</p>
-            <p class="date">Ensimmäinen oikea työpaikka</p>
+            <p>Minut kutsutaan työhaastatteluun Helsinkiin, ohjelmistotaloon, joka toteuttaa sosiaalisen median tyyppistä SaaS-palvelua. Olen innoissani, kerrankin oman alan töitä.</p>
+
+            <p>Työpaikka on Jyväskylässä ja pääsen aloittamaan heti. Web-ala nostaa vasta päätään Suomessa, mutta kuvittelen että minulla kävi tuuri, sillä pääsen ylioppilaan papereilla sisään. Päivittäinen harrastuneisuuteni oli kuitenkin avaintekijä.</p>
+            <p class="info">Ensimmäinen oikea työpaikka</p>
           </div> <!-- timeline-content -->
         </div> <!-- timeline-block -->
 
@@ -263,7 +293,7 @@
             <p>Teen kovasti töitä, mutta kaipaan uusia haasteita. Olen alkanut parantua masennuksesta, saamaan lisää itsetuntoa ja itseluottamusta sekä kykyä osata olla ylpeä omasta työstään.</p>
 
             <p>Twitter on ostanut Tweetdeck-yrityksen ja ilmeisesti huomaa <a href="https://github.com/ronilaukkarinen/tweakdeck">Tweetdeck-forkkini GitHubissa</a>, jonka myötä saan join the flock -kutsun Lontoosta. Kieltäydyn, koska visiot oman yrityksen perustamisesta ovat jo pitkällä.</p>
-            <p class="date">Twitter Inc. kutsuu työhaastatteluun</p>
+            <p class="info">Twitter Inc. kutsuu työhaastatteluun</p>
           </div> <!-- timeline-content -->
         </div> <!-- timeline-block -->
 
@@ -274,7 +304,12 @@
 
           <div class="timeline-content">
             <p>Perustan Juha Laitisen kanssa digitoimiston ja avaamme heti toiminnan Jyväskylän keskustassa. Homma lähteekin hyvin starttiin alihankinnan kautta ja pian omiakin asiakkuuksia alkaa kertyä.</p>
-            <p class="date">Ensimmäinen yritys, Digitoimisto Dude Oy perustetaan</p>
+
+            <p>Manu-poika syntyy elokuussa 2013.</p>
+
+            <p class="info">Ensimmäinen yritys<br />
+            Digitoimisto Dude Oy perustetaan<br />
+            Poika syntyy</p>
           </div> <!-- timeline-content -->
         </div> <!-- timeline-block -->
 
@@ -285,7 +320,7 @@
 
           <div class="timeline-content">
             <p>Olen toteuttanut yli sata asiakasprojektia ja samalla kehittänyt verkkopalvelua, joka ilmoittaa käyttäjää verkkopalvelun hidastumisesta tai kaatumisesta. SaaS-palvelulle perustetaan yritys, Admin Labs Oy.</p>
-            <p class="date">Toinen yritys, Admin Labs Oy perustetaan</p>
+            <p class="info">Toinen yritys, Admin Labs Oy perustetaan</p>
           </div> <!-- timeline-content -->
         </div> <!-- timeline-block -->
 
@@ -296,7 +331,7 @@
 
           <div class="timeline-content">
             <p>Kehityn entistä paremman webin tekemiseen, asiakkaiden palvelemiseen parhaalla mahdollisella tavalla. Minut löytää netistä monesta paikkaa, <a href="http://twitter.com/rolle">pistä tweettiä jos innosti!</a></p>
-            <p class="date">Nykyhetki ja tulevaisuus</p>
+            <p class="info">Nykyhetki ja tulevaisuus</p>
           </div> <!-- timeline-content -->
         </div> <!-- timeline-block -->
 
@@ -310,7 +345,7 @@
 
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new info();a=s.createElement(o),
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
