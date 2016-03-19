@@ -51,7 +51,7 @@
 
 		    <h1>Rolle.</h1>
 
-        <p>Olen Roni <strong>&lt;rolle&gt;</strong> Laukkarinen, Full stack / Front End web-devaaja <a href="https://www.dude.fi">Dudella</a> (eli ihan vaan <i>koodari</i> tai <i>nörtti</i>), sosiaalisen median dinosaurus, craft beer -intoilija, musa- ja leffafriikki. Rakennan kauniita ja toimivia verkkosivuja sekä tweettaan paljon.</p>
+        <p>Olen Roni <strong>&lt;rolle&gt;</strong> Laukkarinen, Full stack / Front End web-devaaja (eli ihan vaan <i>koodari</i> tai <i>nörtti</i>), sosiaalisen median dinosaurus, craft beer -intoilija, musa- ja leffafriikki. Rakennan kauniita ja toimivia verkkosivuja sekä tweettaan paljon.</p>
 
         <ul class="some">
           <li><a href="skype:roni.laukkarinen"><span class="fa fa-skype"></span><span class="screen-reader-text">Add me to Skype</a></li>
@@ -83,27 +83,47 @@
 
     <section class="areas">
 
-      <div class="box">
+      <div class="box box-company">
 
-        <h2>Yrittäjä.</h2>
+        <div class="content">
 
-      </div>
+          <h2>Yrittäjä.</h2>
+          <p><a href="https://www.dude.fi">Digitoimisto Dude Oy</a></p>
 
-      <div class="box">
-
-        <h2>Leffaihminen.</h2>
-
-      </div>
-
-      <div class="box">
-
-        <h2>Olutharrastaja.</h2>
+        </div><!-- .content -->
 
       </div>
 
-      <div class="box">
+      <div class="box box-movies">
 
-        <h2>Koodari.</h2>
+        <div class="content">
+
+          <h2>Leffaihminen.</h2>
+          <p><a href="http://www.rollemaa.org/leffat">Rollen leffablogi</a></p>
+
+        </div><!-- .content -->
+
+      </div>
+
+      <div class="box box-beer">
+
+        <div class="content">
+
+          <h2>Olutharrastaja.</h2>
+          <p><a href="https://www.huurteinen.fi">Huurteinen.fi</a></p>
+
+        </div><!-- .content -->
+
+      </div>
+
+      <div class="box box-code">
+
+        <div class="content">
+
+          <h2>Koodari.</h2>
+          <p><a href="https://github.com/ronilaukkarinen">GitHub</a></p>
+
+        </div><!-- .content -->
 
       </div>
 
@@ -117,7 +137,9 @@
 
     			<div class="timeline-content">
     				<p>Commodore 64:n ja Sinclairin ZX Spectrumin kilpailija Amstrad julkaisi <b>Amstrad CPC</b>-koneensa vuonna 1984, jonka jälkeen isäni osti koneen ja ryhtyi koodaamaan BASICia, koska ei ollut mikään HC-tietokonepelaaja vaan enemmänkin kiinnostunut mitä kaikkea koneella voi tehdä.</p>
-            <span class="date">Juuri ennen syntymää</span>
+
+            <img src="images/amstrad.jpg" alt="Amstrad CPC" />
+            <p class="date">Juuri ennen syntymää</p>
     			</div> <!-- timeline-content -->
     		</div> <!-- timeline-block -->
 
@@ -128,8 +150,8 @@
 
     			<div class="timeline-content">
     				<p><img src="images/rolle-born.jpg" alt="Synnyn" />
-              Näen päivänvalon Keski-Suomen keskussairaalassa, Jyväskylässä. Synnyn terveenä poikana nuorelle sairaanhoitajaäidille ja veturinkuljettajaisälle.</p>
-            <span class="date">Syntymä</span>
+              Näen päivänvalon Keski-Suomen keskussairaalassa, Jyväskyl&auml;ss&auml;. Synnyn terveenä poikana nuorelle sairaanhoitajaäidille ja veturinkuljettajaisälle.</p>
+            <p class="date">Syntymä</p>
     			</div> <!-- timeline-content -->
     		</div> <!-- timeline-block -->
 
@@ -139,10 +161,19 @@
     			</div> <!-- timeline-icon -->
 
     			<div class="timeline-content">
-    				<p>Saan ensimmäiset tietokonepelini synttärilahjaksi, usealla levykkeellä varustettuna. Näistä mieleen jäi etenkin vuonna 1991 julkaistu <a href="https://www.youtube.com/watch?v=6iiwyq2pVSY">Rolling Ronny</a>, isälläni on huumorintajua. Myöhemmin ensimmäisenä nettinickinä olikin "ronny".
+    				<p>Saan ensimmäiset tietokonepelini synttärilahjaksi, usealla levykkeellä varustettuna. Näistä mieleen jäi etenkin vuonna 1991 julkaistu Rolling Ronny, isälläni on huumorintajua. Myöhemmin ensimmäisenä nettinickinä olikin "ronny".</p>
+
+            <div class="videoWrapper">
+              <iframe width="560" height="315" src="http://www.youtube.com/embed/2Akso4taEbA?vq=hd1080&modestbranding=1&iv_load_policy=3&showinfo=0&theme=light&color=white" frameborder="0"></iframe>
+            </div>
 
             <p>Olen rauhallinen ja mietteliäs lapsi, hieman introvertin suuntaan jo tässä vaiheessa. Ujo ja arka. Täyttäessäni 6 kirjoitan ja luen älyttömiä määriä. Kirjoittamisesta tulee heti rakas harrastus.</p>
-            <span class="date">Ensimmäinen omistamani tietokonepeli</span>
+            <p class="date">Ensimmäiset tietokonepelit.<br />
+            Rolling Ronny.<br />
+            One Must Fall 2097.<br />
+            Jagged Alliance.<br />
+            Command &amp; Conquer.<br />
+            Sierra</p>
     			</div> <!-- timeline-content -->
     		</div> <!-- timeline-block -->
 
@@ -152,8 +183,8 @@
     			</div> <!-- timeline-icon -->
 
     			<div class="timeline-content">
-    				<p>Isäni luo minulle ja veljelleni ensimmäisen kotisivutilan ja sähköpostit NICin palvelimilta. Julkaisen ensimmäiset nettisivuni. Olen tuolloin noin kymmenvuotias. Palvelin on pystyssä <a href="http://www.nic.fi/~ronny/">tähänkin päivään saakka</a>.</p>
-            <span class="date">Ensimmäiset kotisivut</span>
+    				<p>Isäni luo minulle ja veljelleni ensimmäisen kotisivutilan ja sähköpostit Nicin palvelimille. Julkaisen ensimmäiset nettisivuni. Olen tuolloin noin kymmenvuotias. Palvelin on pystyssä <a href="http://www.nic.fi/~ronny/">tähänkin päivään saakka</a>.</p>
+            <p class="date">Ensimmäiset kotisivut</p>
     			</div> <!-- timeline-content -->
     		</div> <!-- timeline-block -->
 
@@ -164,7 +195,7 @@
 
     			<div class="timeline-content">
     				<p>Aloitan pianonsoiton, innostun ensimmäistä kertaa jostain muustakin kuin konemusiikista. Käyn viikottain <a href="https://fi.wikipedia.org/wiki/Risto_Urrio">Risto Urrion</a> kirjailijakerhossa Jyväskylän kirjailijatalolla. Joitakin runojani näkyy jopa Keskisuomalaisessakin. Nettisivujen väsääminen on kaikista rakkain harrastukseni ja alan tekemään pikkupalkkioista hommia tuttaville.</p>
-    				<span class="date">Klassinen piano, kirjoittaminen ja nettisivut rakkaimmat harrastukset</span>
+    				<p class="date">Klassinen piano, kirjoittaminen ja nettisivut rakkaimmat harrastukset</p>
     			</div> <!-- timeline-content -->
     		</div> <!-- timeline-block -->
 
@@ -175,7 +206,7 @@
 
     			<div class="timeline-content">
     				<p>Minulla on jo kokemusta tekstitiedosto-php-pohjaisista sisällönhallintajärjestelmistä, cutenewsistä, sekä moderneista CMSistä kuten Textpattern, mutta vasta version 2.0 myötä innostun toden teolla WordPressistä ja sille tielle jäänkin.</p>
-    				<span class="date">WordPress julkaistaan, bloggausinto kasvaa</span>
+    				<p class="date">WordPress julkaistaan, bloggausinto kasvaa</p>
     			</div> <!-- timeline-content -->
     		</div> <!-- timeline-block -->
 
@@ -186,7 +217,7 @@
 
     			<div class="timeline-content">
     				<p>Valmistun ylioppilaaksi Cygnaeus-lukiosta kohtalaisin paperein, ainoastaan tietotekniikasta ja kuvamataidosta vedän täysiä pisteitä, lyhyt matematiikka hipoen läpi. Tiedän että backend-ohjelmoijaa minusta ei ainakaan tule, mutta verkkosivuissa olen yhä mielestäni haka. Tutustun Espoosta Jyväskylään muuttaneeseen Veeraan IRCissä ja suhteesta kehkeytyy jotain vakavempaa.</p>
-    				<span class="date">Ylioppilas, tyttöystävä</span>
+    				<p class="date">Ylioppilas, tyttöystävä</p>
     			</div> <!-- timeline-content -->
     		</div> <!-- timeline-block -->
 
@@ -197,7 +228,7 @@
 
           <div class="timeline-content">
             <p>Pääsen heti lakin saatuani sivariin, jonka suoritan Jyväskylän Yliopiston tietojenkäsittelytieteiden laitoksella. Opin tuon vuoden aikana paljon. Pitkään kytenyt masennus vie palveluskelpoisuuteni ja saan loppuajasta vapautuksen paria erilaista masennukseen liittyvää diagnoosia vastaan. Jään sosiaalisten tilanteiden pelon aiheuttaman työkyvyttömyyden vuoksi sairaslomalle. Bloggaan paljon myös <a href="http://www.rollemaa.org/avainsana/sivari/">sivariin</a> liittyvistä aiheista. Menen Veeran kanssa kihloihin ja kesällä naimisiin.</p>
-            <span class="date">Siviilipalvelus Jyväskylän Yliopistolla, kihlaus</span>
+            <p class="date">Siviilipalvelus Jyväskylän Yliopistolla, kihlaus</p>
           </div> <!-- timeline-content -->
         </div> <!-- timeline-block -->
 
@@ -208,7 +239,7 @@
 
           <div class="timeline-content">
             <p>Oltuani tovin sairaslomalla, käyn työkkärissä pari kurssia ja haen Jyväskylän Data Group -tietotekniikkaliikkeeseen harjoitteluun. Kaikki sujuu loistavasti, mutta minua ei palkata. Palloilen rahattomana työttömänä hakien töitä, masentuen entisestään. Luulen, että minulla ei ole toivoa. Samaan aikaan esikoistyttäreni Lotta Iines syntyy maailmaan.</p>
-            <span class="date">Pätkätyöt, esikoinen syntyy</span>
+            <p class="date">Pätkätyöt, esikoinen syntyy</p>
           </div> <!-- timeline-content -->
         </div> <!-- timeline-block -->
 
@@ -219,7 +250,7 @@
 
           <div class="timeline-content">
             <p>Minut kutsutaan työhaastatteluun Helsinkiin, ohjelmistotaloon, joka toteuttaa sosiaalisen median tyyppistä SaaS-palvelua. Olen innoissani, kerrankin oman alan töitä. Työpaikka on Jyväskylässä ja pääsen aloittamaan heti. Web-ala nostaa vasta päätään Suomessa, mutta kuvittelen että minulla kävi tuuri, sillä pääsen ylioppilaan papereilla sisään. Päivittäinen harrastuneisuuteni oli kuitenkin avaintekijä.</p>
-            <span class="date">Ensimmäinen oikea työpaikka</span>
+            <p class="date">Ensimmäinen oikea työpaikka</p>
           </div> <!-- timeline-content -->
         </div> <!-- timeline-block -->
 
@@ -229,8 +260,10 @@
           </div> <!-- timeline-icon -->
 
           <div class="timeline-content">
-            <p>Teen kovasti töitä, mutta kaipaan uusia haasteita. Olen alkanut parantua masennuksesta, saamaan lisää itsetuntoa ja itseluottamusta sekä kykyä osata olla ylpeä omasta työstään. Twitter on ostanut Tweetdeck-yrityksen ja huomaa Tweetdeck-forkkini GitHubista, jonka myötä tarjoaisi töitä Lontoosta, mutta kieltäydyn, koska visiot oman yrityksen perustamisesta ovat jo pitkällä.</p>
-            <span class="date">Twitter Inc. kutsuu työhaastatteluun</span>
+            <p>Teen kovasti töitä, mutta kaipaan uusia haasteita. Olen alkanut parantua masennuksesta, saamaan lisää itsetuntoa ja itseluottamusta sekä kykyä osata olla ylpeä omasta työstään.</p>
+
+            <p>Twitter on ostanut Tweetdeck-yrityksen ja ilmeisesti huomaa <a href="https://github.com/ronilaukkarinen/tweakdeck">Tweetdeck-forkkini GitHubissa</a>, jonka myötä saan join the flock -kutsun Lontoosta. Kieltäydyn, koska visiot oman yrityksen perustamisesta ovat jo pitkällä.</p>
+            <p class="date">Twitter Inc. kutsuu työhaastatteluun</p>
           </div> <!-- timeline-content -->
         </div> <!-- timeline-block -->
 
@@ -241,7 +274,7 @@
 
           <div class="timeline-content">
             <p>Perustan Juha Laitisen kanssa digitoimiston ja avaamme heti toiminnan Jyväskylän keskustassa. Homma lähteekin hyvin starttiin alihankinnan kautta ja pian omiakin asiakkuuksia alkaa kertyä.</p>
-            <span class="date">Ensimmäinen yritys, Digitoimisto Dude Oy perustetaan</span>
+            <p class="date">Ensimmäinen yritys, Digitoimisto Dude Oy perustetaan</p>
           </div> <!-- timeline-content -->
         </div> <!-- timeline-block -->
 
@@ -252,9 +285,24 @@
 
           <div class="timeline-content">
             <p>Olen toteuttanut yli sata asiakasprojektia ja samalla kehittänyt verkkopalvelua, joka ilmoittaa käyttäjää verkkopalvelun hidastumisesta tai kaatumisesta. SaaS-palvelulle perustetaan yritys, Admin Labs Oy.</p>
-            <span class="date">Toinen yritys, Admin Labs Oy perustetaan</span>
+            <p class="date">Toinen yritys, Admin Labs Oy perustetaan</p>
           </div> <!-- timeline-content -->
         </div> <!-- timeline-block -->
+
+        <div class="timeline-block">
+          <div class="timeline-icon future">
+            <h2>?</h2>
+          </div> <!-- timeline-icon -->
+
+          <div class="timeline-content">
+            <p>Kehityn entistä paremman webin tekemiseen, asiakkaiden palvelemiseen parhaalla mahdollisella tavalla. Minut löytää netistä monesta paikkaa, <a href="http://twitter.com/rolle">pistä tweettiä jos innosti!</a></p>
+            <p class="date">Nykyhetki ja tulevaisuus</p>
+          </div> <!-- timeline-content -->
+        </div> <!-- timeline-block -->
+
+        <footer class="footer">
+          <p>Tämän sivun rakensi tietämyksensä pohjalta puhtaana käsityönä Roni "Rolle" Laukkarinen. Koodi on 100% open sourcea ja löytyy <a target=_"blank" href="https://github.com/ronilaukkarinen"><span class="fa fa-github"></span> GitHubista</a>.</p>
+        </footer>
 
     	</section> <!-- timeline -->
 
