@@ -141,7 +141,6 @@ gulp.task('js', function() {
           'node_modules/jquery/dist/jquery.js',
           'node_modules/skrollr/dist/skrollr.min.js',
           jsSrc + '/modernizr.js',
-          jsSrc + '/main.js',
           jsSrc + '/scripts.js',
         ])
         .pipe(concat('all.js'))

@@ -388,11 +388,11 @@ header {
 
   .cssanimations .timeline-icon.bounce-in {
     visibility: visible;
-    animation: cd-bounce-1 .6s;
+    animation: bounce-1 .6s;
   }
 }
 
-@keyframes cd-bounce-1 {
+@keyframes bounce-1 {
   0% {
     opacity: 0;
     -webkit-transform: scale(.5);
@@ -597,18 +597,18 @@ header {
 
   .cssanimations .timeline-content.bounce-in {
     visibility: visible;
-    animation: cd-bounce-2 .6s;
+    animation: bounce-2 .6s;
   }
 }
 
 @media only screen and (min-width: 1170px) {
   // Inverse bounce effect on even content blocks
   .cssanimations .timeline-block:nth-child(even) .timeline-content.bounce-in {
-    animation: cd-bounce-2-inverse .6s;
+    animation: bounce-2-inverse .6s;
   }
 }
 
-@keyframes cd-bounce-2 {
+@keyframes bounce-2 {
   0% {
     opacity: 0;
     transform: translateX(-100px);
@@ -624,7 +624,7 @@ header {
   }
 }
 
-@keyframes cd-bounce-2-inverse {
+@keyframes bounce-2-inverse {
   0% {
     opacity: 0;
     transform: translateX(100px);
