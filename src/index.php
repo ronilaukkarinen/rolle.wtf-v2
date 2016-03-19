@@ -34,7 +34,9 @@
 
 		    <h1 lang="en">Rolle.</h1>
 
-        <p>Olen Roni <strong>&lt;rolle&gt;</strong> Laukkarinen, Full stack / Front End web-devaaja (eli ihan vaan <i>koodari</i> tai <i>nörtti</i>), sosiaalisen median dinosaurus, craft beer -intoilija, musa- ja leffafriikki. Rakennan kauniita ja toimivia verkkosivuja sekä tweettaan paljon.</p>
+        <!-- <a href="#lang-en" onclick="window.lang.change('en'); return false;">en</a> | <a href="#lang-fi" onclick="window.lang.change('fi'); return false;">fi</a> -->
+
+        <p><span lang="en">I'm Roni</a> <strong>&lt;rolle&gt;</strong> Laukkarinen, Full stack / Front End web developer (<i>coder</i> or <i>nerd</i> as they say), dinosaur in social media age, craft beer enthusiast, music- and movie digger. I build beautiful and functional websites and tweet a lot.</p>
 
         <ul class="some">
           <li><a href="skype:roni.laukkarinen"><span class="fa fa-skype"></span><span class="screen-reader-text">Add me to Skype</a></li>
@@ -71,7 +73,7 @@
 
         <div class="content">
 
-          <h2>Yrittäjä.</h2>
+          <h2 lang="en">Entrepreneur.</h2>
           <p><a target=_"blank" href="https://www.dude.fi">Digitoimisto Dude Oy</a></p>
 
         </div><!-- .content -->
@@ -336,7 +338,7 @@
         </div> <!-- timeline-block -->
 
         <div class="timeline-block">
-          <div class="timeline-icon">lp wa
+          <div class="timeline-icon">
             <h2>2016</h2>
           </div> <!-- timeline-icon -->
 
@@ -409,12 +411,12 @@
   <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
   <script>
-		var lang = new Lang();
-		lang.dynamic('fi', 'js/langpack/fi.json');
-		lang.init({
-			defaultLang: 'en'
-		});
-	</script>
+    var lang = new Lang();
+    lang.dynamic('fi', 'fi.json');
+    lang.init({
+      defaultLang: 'en'
+    });
+  </script>
 
 </body>
 </html>

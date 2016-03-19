@@ -1,0 +1,12 @@
+{
+	"token": {
+		"I'm Roni":"Olen Roni",
+		"":" <strong>&lt;rolle&gt;</strong> Laukkarinen, Full stack / Front End web-devaaja (eli ihan vaan <i>koodari</i> tai <i>nörtti</i>), sosiaalisen median dinosaurus, craft beer -intoilija, musa- ja leffafriikki. Rakennan kauniita ja toimivia verkkosivuja sekä tweettaan paljon.",
+		"Entrepreneur.":"Yrittäjä."
+	},
+	"regex": [
+		["Budget", "งบประมาณ"],
+		["^Something at start of text", ""],
+		["This will be case insensitive", "i", ""]
+	]
+}
