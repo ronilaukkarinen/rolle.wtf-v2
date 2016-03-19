@@ -12,8 +12,8 @@
 		"Digital agency":"Digitoimisto Dude Oy",
 		"Entrepreneur.":"Yrittäjä.",
 		"My movie blog":"Rollen leffablogi",
-		"Craft beer enthusiast":"Olutharrastaja.",
-		"Koodari.":"Coder."
+		"Craft beer enthusiast.":"Olutharrastaja.",
+		"Coder.":"Koodari."
 	},
 	"regex": [
 		["Budget", "งบประมาณ"],

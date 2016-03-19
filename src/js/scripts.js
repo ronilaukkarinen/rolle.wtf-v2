@@ -10,7 +10,7 @@ Opera: function() { return navigator.userAgent.match(/Opera Mini/i); },
 Windows: function() { return navigator.userAgent.match(/IEMobile/i); },
 any: function() { return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows()); } };
 
-$(document).ready(function(){
+$(document).ready(function() {
 
 	// Twitter update
 	$(".tweet").tweet({

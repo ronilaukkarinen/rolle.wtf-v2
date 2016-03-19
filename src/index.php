@@ -1,3 +1,4 @@
+<?php require_once('../vendor/autoload.php'); ?>
 <!doctype html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -34,9 +35,9 @@
 
 		    <h1 lang="en">Rolle.</h1>
 
-        <!-- <a href="#lang-en" onclick="window.lang.change('en'); return false;">en</a> | <a href="#lang-fi" onclick="window.lang.change('fi'); return false;">fi</a> -->
+        <a href="#lang-en" onclick="window.lang.change('en'); return false;">en</a> | <a href="#lang-fi" onclick="window.lang.change('fi'); return false;">fi</a>
 
-        <p><span lang="en">I'm Roni</a> <strong>&lt;rolle&gt;</strong> Laukkarinen, <span lang="en">Full stack / Front End web developer</span> (<span lang="en">which means some kind of a</span> <i lang="en">coder</i> <span lang="en">or</span> <i lang="en">nerd</i>), <span lang="en">dinosaur in social media age, craft beer enthusiast, music- and movie digger. I build beautiful and functional websites and tweet a lot.</span></p>
+        <p><span lang="en">I'm Roni</span></a> <strong>&lt;rolle&gt;</strong> Laukkarinen, <span lang="en">Full stack / Front End web developer</span> (<span lang="en">which means some kind of a</span> <i lang="en">coder</i> <span lang="en">or</span> <i lang="en">nerd</i>), <span lang="en">dinosaur in social media age, craft beer enthusiast, music- and movie digger. I build beautiful and functional websites and tweet a lot.</span></p>
 
         <ul class="some">
           <li><a href="skype:roni.laukkarinen"><span class="fa fa-skype"></span><span class="screen-reader-text">Add me to Skype</a></li>
@@ -106,7 +107,7 @@
 
         <div class="content">
 
-          <h2 lang="en">Koodari.</h2>
+          <h2 lang="en">Coder.</h2>
           <p><a target=_"blank" href="https://github.com/ronilaukkarinen">GitHub</a></p>
 
         </div><!-- .content -->
@@ -229,10 +230,6 @@
             <?php endif; ?></p>
 
             <p>Rekisteröidyn <a href="http://www.last.fm/user/rolle-/" class="lastfm"><span class="fa fa-lastfm"></span> Last.fm:ään.</a></p>
-
-            <div class="np">
-              <?php include('inc/lastfm/index.php'); ?>
-            </div>
 
     				<p class="info">WordPress julkaistaan, bloggausinto kasvaa,<br />
             Taidot kehittyy<br />
@@ -412,9 +409,15 @@
 
   <script>
     var lang = new Lang();
+
     lang.dynamic('fi', 'fi.json');
     lang.init({
       defaultLang: 'en'
+    });
+
+    // Force Finnish until all translated
+    $(document).ready(function() {
+      window.lang.change('fi');
     });
   </script>
 
