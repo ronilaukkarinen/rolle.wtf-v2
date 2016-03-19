@@ -4,7 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "348b55733fe77f5ee9cce9c687f416fe",
+    "hash": "05101f52214932d55c95edf90b0f3643",
+    "content-hash": "4e3549e21f281c1023726b64d2489998",
     "packages": [
         {
             "name": "cosenary/instagram",
@@ -48,6 +49,61 @@
                 "instagram"
             ],
             "time": "2014-11-29 13:10:42"
+        },
+        {
+            "name": "searchturbine/phpwee-php-minifier",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/searchturbine/phpwee-php-minifier.git",
+                "reference": "cea1a7ae453071176f0469f246ea7b469e056432"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/searchturbine/phpwee-php-minifier/zipball/cea1a7ae453071176f0469f246ea7b469e056432",
+                "reference": "cea1a7ae453071176f0469f246ea7b469e056432",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "phpwee.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD"
+            ],
+            "authors": [
+                {
+                    "name": "Search Turbine - Open Source PHP Dev Team",
+                    "email": "community@searchturbine.com",
+                    "homepage": "http://searchturbine.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A PHP minifier for HTML, CSS and JS files.",
+            "homepage": "http://searchturbine.com/php/phpwee",
+            "keywords": [
+                "CSS3",
+                "HTML5",
+                "JS",
+                "compress",
+                "css",
+                "free",
+                "html",
+                "javascript",
+                "min",
+                "minify",
+                "open source",
+                "php",
+                "php5",
+                "phpwee"
+            ],
+            "time": "2015-03-28 08:57:12"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -1050,8 +1106,10 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "stable",
-    "stability-flags": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "searchturbine/phpwee-php-minifier": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

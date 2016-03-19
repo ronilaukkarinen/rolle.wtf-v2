@@ -1,4 +1,18 @@
-<?php require_once('../vendor/autoload.php'); ?>
+<?php
+if(file_exists('/var/www/rolle.wtf-2016/vendor')) :
+	include('/var/www/rolle.wtf-2016/vendor/autoload.php');
+else :
+	include('/var/www/rolle.wtf/deploy/vendor/autoload.php');
+endif;
+$cachefile = 'cached-index.html';
+$cachetime = 1800;
+if (file_exists($cachefile) && time() - $cachetime < filemtime($cachefile)) {
+    include($cachefile);
+    echo "<!-- Amazing hand crafted super cache, generated ".date('H:i', filemtime($cachefile))." -->";
+    exit;
+}
+ob_start();
+?>
 <!doctype html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -10,6 +24,132 @@
     <title>Rolle &mdash; A front end developer, web designer &mdash; Roni Laukkarinen</title>
     <meta name="description" content="Roni Laukkarinen is a Finnish web developer, Twitter freak, craft beer enthusiast. Find out more.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="preload" href="css/layout.css" as="style" onload="this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="css/layout.css"></noscript>
+		<script>
+		/*! loadCSS: load a CSS file asynchronously. [c]2016 @scottjehl, Filament Group, Inc. Licensed MIT */
+		(function(w){
+			"use strict";
+			/* exported loadCSS */
+			var loadCSS = function( href, before, media ){
+				// Arguments explained:
+				// `href` [REQUIRED] is the URL for your CSS file.
+				// `before` [OPTIONAL] is the element the script should use as a reference for injecting our stylesheet <link> before
+					// By default, loadCSS attempts to inject the link after the last stylesheet or script in the DOM. However, you might desire a more specific location in your document.
+				// `media` [OPTIONAL] is the media type or query of the stylesheet. By default it will be 'all'
+				var doc = w.document;
+				var ss = doc.createElement( "link" );
+				var ref;
+				if( before ){
+					ref = before;
+				}
+				else {
+					var refs = ( doc.body || doc.getElementsByTagName( "head" )[ 0 ] ).childNodes;
+					ref = refs[ refs.length - 1];
+				}
+
+				var sheets = doc.styleSheets;
+				ss.rel = "stylesheet";
+				ss.href = href;
+				// temporarily set media to something inapplicable to ensure it'll fetch without blocking render
+				ss.media = "only x";
+
+				// wait until body is defined before injecting link. This ensures a non-blocking load in IE11.
+				function ready( cb ){
+					if( doc.body ){
+						return cb();
+					}
+					setTimeout(function(){
+						ready( cb );
+					});
+				}
+				// Inject link
+					// Note: the ternary preserves the existing behavior of "before" argument, but we could choose to change the argument to "after" in a later release and standardize on ref.nextSibling for all refs
+					// Note: `insertBefore` is used instead of `appendChild`, for safety re: http://www.paulirish.com/2011/surefire-dom-element-insertion/
+				ready( function(){
+					ref.parentNode.insertBefore( ss, ( before ? ref : ref.nextSibling ) );
+				});
+				// A method (exposed on return object for external use) that mimics onload by polling until document.styleSheets until it includes the new sheet.
+				var onloadcssdefined = function( cb ){
+					var resolvedHref = ss.href;
+					var i = sheets.length;
+					while( i-- ){
+						if( sheets[ i ].href === resolvedHref ){
+							return cb();
+						}
+					}
+					setTimeout(function() {
+						onloadcssdefined( cb );
+					});
+				};
+
+				function loadCB(){
+					if( ss.addEventListener ){
+						ss.removeEventListener( "load", loadCB );
+					}
+					ss.media = media || "all";
+				}
+
+				// once loaded, set link's media back to `all` so that the stylesheet applies once it loads
+				if( ss.addEventListener ){
+					ss.addEventListener( "load", loadCB);
+				}
+				ss.onloadcssdefined = onloadcssdefined;
+				onloadcssdefined( loadCB );
+				return ss;
+			};
+			// commonjs
+			if( typeof exports !== "undefined" ){
+				exports.loadCSS = loadCSS;
+			}
+			else {
+				w.loadCSS = loadCSS;
+			}
+		}( typeof global !== "undefined" ? global : this ));
+
+
+
+
+		/* CSS rel=preload polyfill (from src/cssrelpreload.js) */
+		/* CSS rel=preload polyfill. Depends on loadCSS function */
+		(function( w ){
+		  // rel=preload support test
+		  if( !w.loadCSS ){
+		    return;
+		  }
+		  var rp = loadCSS.relpreload = {};
+		  rp.support = function(){
+		    try {
+		      return w.document.createElement("link").relList.supports( "preload" );
+		    } catch (e) {}
+		  };
+
+		  // loop preload links and fetch using loadCSS
+		  rp.poly = function(){
+		    var links = w.document.getElementsByTagName( "link" );
+		    for( var i = 0; i < links.length; i++ ){
+		      var link = links[ i ];
+		      if( link.rel === "preload" && link.getAttribute( "as" ) === "style" ){
+		        w.loadCSS( link.href, link );
+		        link.rel = null;
+		      }
+		    }
+		  };
+
+		  // if link[rel=preload] is not supported, we must fetch the CSS manually using loadCSS
+		  if( !rp.support() ){
+		    rp.poly();
+		    var run = w.setInterval( rp.poly, 300 );
+		    if( w.addEventListener ){
+		      w.addEventListener( "load", function(){
+		        w.clearInterval( run );
+		      } )
+		    }
+		  }
+		}( this ));
+
+		</script>
 
     <link rel="shortcut icon" href="images/favicon.png">
 
@@ -326,7 +466,7 @@
 
             <p>Manu-poika syntyy elokuussa 2013.</p>
 
-            <blockquote class="instagram-media" data-instgrm-version="6" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAAGFBMVEUiIiI9PT0eHh4gIB4hIBkcHBwcHBwcHBydr+JQAAAACHRSTlMABA4YHyQsM5jtaMwAAADfSURBVDjL7ZVBEgMhCAQBAf//42xcNbpAqakcM0ftUmFAAIBE81IqBJdS3lS6zs3bIpB9WED3YYXFPmHRfT8sgyrCP1x8uEUxLMzNWElFOYCV6mHWWwMzdPEKHlhLw7NWJqkHc4uIZphavDzA2JPzUDsBZziNae2S6owH8xPmX8G7zzgKEOPUoYHvGz1TBCxMkd3kwNVbU0gKHkx+iZILf77IofhrY1nYFnB/lQPb79drWOyJVa/DAvg9B/rLB4cC+Nqgdz/TvBbBnr6GBReqn/nRmDgaQEej7WhonozjF+Y2I/fZou/qAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/5DHZZ_G0Z7/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">Kuva, jonka Roni Rolle Laukkarinen (@rolle_) julkaisi</a> <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2015-07-12T19:58:51+00:00">12. 07ta 2015 klo 12.58 PDT</time></p></div></blockquote>
+            <a target="_blank" href="https://www.instagram.com/p/5DHZZ_G0Z7/"><img src="images/son.jpg" alt="Minä poikani kanssa, kuva otettu veljeni häistä 2015" /></a>
 
             <p class="info">Ensimmäinen yritys<br />
             Digitoimisto Dude Oy perustetaan<br />
@@ -401,9 +541,7 @@
     ga('send', 'pageview');
   </script>
 
-  <link rel="stylesheet" href="css/layout.css">
   <script src="js/all.js"></script>
-  <script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
   <script src="https://use.typekit.net/ixg4duh.js"></script>
   <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
@@ -423,3 +561,10 @@
 
 </body>
 </html>
+<?php
+$fp = fopen($cachefile, 'w');
+$minified_html = PHPWee\Minify::html(ob_get_contents());
+fwrite($fp, $minified_html);
+fclose($fp);
+ob_end_flush();
+?>
