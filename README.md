@@ -1,4 +1,4 @@
-# rolle.wtf 2016
+# Rolle.wtf v2
 
 Website at [rolle.wtf](http://rolle.wtf). A site where it all comes together. Built with [Modern HTML5 Boilerplate](https://github.com/ronilaukkarinen/modern-html5-boilerplate).
 
