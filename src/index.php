@@ -377,7 +377,7 @@ ob_start();
         </div>
 
         <footer class="footer">
-          <p>Tämän sivun rakensi tietämyksensä pohjalta puhtaana käsityönä Roni "Rolle" Laukkarinen. Koodi on 100% open sourcea ja löytyy <a target=_"blank" href="https://github.com/ronilaukkarinen"><span class="fa fa-github"></span> GitHubista</a>.</p>
+          <p>Tämän sivun rakensi tietämyksensä pohjalta puhtaana käsityönä Roni "Rolle" Laukkarinen. Koodi on 100% open sourcea ja löytyy <a target=_"blank" href="https://github.com/ronilaukkarinen/rolle.wtf-v2"><span class="fa fa-github"></span> GitHubista</a>.</p>
         </footer>
 
     	</section> <!-- timeline -->
