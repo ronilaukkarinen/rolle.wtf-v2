@@ -35,7 +35,7 @@
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
 </head>
 <body>
-	<header>
+	<header class="main-header">
     <div class="shade"></div>
 
     <div class="video-container">
@@ -69,6 +69,7 @@
           <li><a target=_"blank" href="http://www.last.fm/user/rolle-"><span class="fa fa-lastfm"></span><span class="screen-reader-text">Check out my music taste at Last.fm</a></li>
           <li><a target=_"blank" href="http://bandcamp.com/roni"><img src="images/bandcamp.svg" alt="Bandcamp" /><span class="screen-reader-text">Check out my music collections at Bandcamp</a></li>
           <li><a target=_"blank" href="http://open.spotify.com/user/rolle-"><span class="fa fa-spotify"></span><span class="screen-reader-text">Check out my music taste at Spotify</a></li>
+          <li><a target=_"blank" href="https://medium.com/@rolle"><span class="fa fa-medium"></span><span class="screen-reader-text">Check out my text in Medium</a></li>
         </ul>
 
       </div><!-- .content -->
@@ -196,13 +197,13 @@
     			</div> <!-- timeline-icon -->
 
     			<div class="timeline-content">
-    				<p>Isäni luo minulle ja veljelleni ensimmäisen kotisivutilan ja sähköpostit Nicin palvelimille. Julkaisen ensimmäiset nettisivuni. Olen tuolloin noin kymmenvuotias. Palvelin on pystyssä <a href="http://www.nic.fi/~ronny/">tähänkin päivään saakka</a>.</p>
+    				<p><img src="images/90s.jpg" alt="Kuvassa käytän vanhaa 90-luvun tietokonetta." />
+              Isäni luo minulle ja veljelleni ensimmäisen kotisivutilan ja sähköpostit Nicin palvelimille. Julkaisen ensimmäiset nettisivuni. Olen tuolloin noin kymmenvuotias. Palvelin on pystyssä <a href="http://www.nic.fi/~ronny/">tähänkin päivään saakka</a>.</p>
 
-            <img src="images/90s.jpg" alt="Kuvassa käytän vanhaa 90-luvun tietokonetta." />
             <p class="info">Ensimmäiset kotisivut,<br />
-            Adobe Pagemill<br />
             Notepad<br />
-            HTML, inline CSS</p>
+            HTML<br />
+            Inline CSS</p>
     			</div> <!-- timeline-content -->
     		</div> <!-- timeline-block -->
 
@@ -212,8 +213,15 @@
     			</div> <!-- timeline-icon -->
 
     			<div class="timeline-content">
-    				<p>Aloitan pianonsoiton, innostun ensimmäistä kertaa jostain muustakin kuin konemusiikista. Käyn viikottain <a href="https://fi.wikipedia.org/wiki/Risto_Urrio">Risto Urrion</a> kirjailijakerhossa Jyväskylän kirjailijatalolla. Joitakin runojani näkyy jopa Keskisuomalaisessakin. Nettisivujen väsääminen on kaikista rakkain harrastukseni ja alan tekemään pikkupalkkioista hommia tuttaville.</p>
-    				<p class="info">Klassinen piano, kirjoittaminen ja nettisivut rakkaimmat harrastukset</p>
+    				<p>Aloitan pianonsoiton, innostun ensimmäistä kertaa jostain muustakin kuin konemusiikista. Käyn viikottain <a href="https://fi.wikipedia.org/wiki/Risto_Urrio">Risto Urrion</a> kirjailijakerhossa Jyväskylän kirjailijatalolla. Joitakin runojani näkyy jopa Keskisuomalaisessakin.</p>
+
+            <p>Nettisivujen väsääminen on kaikista rakkain harrastukseni ja alan tekemään pikkupalkkioista hommia tuttaville. Alan irkkaamaan, rekisteröidyn <a href="https://irc-galleria.net/user/rolle%60">IRC-galleriaan</a> ja <a href="https://myspace.com/ellor">Myspaceen</a>.</p>
+    				<p class="info">
+              Klassinen piano<br />
+              Kirjoittaminen<br />
+              Koodaaminen<br />
+              Sosiaalinen media<br />
+              IRC</p>
     			</div> <!-- timeline-content -->
     		</div> <!-- timeline-block -->
 
@@ -224,6 +232,23 @@
 
     			<div class="timeline-content">
     				<p>Minulla on jo kokemusta tekstitiedosto-php-pohjaisista sisällönhallintajärjestelmistä, cutenewsistä, sekä moderneista CMSistä kuten Textpattern, mutta vasta version 2.0 myötä innostun toden teolla WordPressistä ja sille tielle jäänkin.</p>
+
+            <p>Ensimmäinen WordPress-sivustoni <a href="http://www.rollemaa.org">Rollemaa</a> on yhä pystyssä. Viimeisin bloggaus kirjoitettu <b><?php
+                $url = "http://www.rollemaa.org/feed/";
+                $rss = simplexml_load_file($url);
+
+                if($rss) :
+                  include_once('inc/time-since-fin.php');
+                  echo " ".aika(abs(strtotime($rss->channel->lastBuildDate . " GMT")), time())." ";
+            ?></b> sitten.
+            <?php endif; ?></p>
+
+            <p>Rekisteröidyn <a href="http://www.last.fm/user/rolle-/" class="lastfm"><span class="fa fa-lastfm"></span> Last.fm:ään.</a></p>
+
+            <div class="np">
+              <?php include('inc/lastfm/index.php'); ?>
+            </div>
+
     				<p class="info">WordPress julkaistaan, bloggausinto kasvaa,<br />
             Taidot kehittyy<br />
             PHP<br />
@@ -237,8 +262,15 @@
     			</div> <!-- timeline-icon -->
 
     			<div class="timeline-content">
-    				<p>Valmistun ylioppilaaksi Cygnaeus-lukiosta kohtalaisin paperein, ainoastaan tietotekniikasta ja kuvamataidosta vedän täysiä pisteitä, lyhyt matematiikka hipoen läpi. Tiedän että backend-ohjelmoijaa minusta ei ainakaan tule, mutta verkkosivuissa olen yhä mielestäni haka. Tutustun Espoosta Jyväskylään muuttaneeseen Veeraan IRCissä ja suhteesta kehkeytyy jotain vakavempaa.</p>
-    				<p class="info">Ylioppilas, tyttöystävä</p>
+    				<p>Valmistun ylioppilaaksi Cygnaeus-lukiosta kohtalaisin paperein, ainoastaan tietotekniikasta ja kuvamataidosta vedän täysiä pisteitä, lyhyt matematiikka hipoen läpi.</p>
+
+            <p>Tiedän että backend-ohjelmoijaa minusta ei ainakaan tule, mutta verkkosivuissa olen yhä mielestäni haka. Tutustun Espoosta Jyväskylään muuttaneeseen Veeraan IRCissä ja suhteesta kehkeytyy jotain vakavempaa. Veeran kuurosokeuden myötä opettelen viittomakielen.</p>
+
+            <p>Rekisteröidyn <a class="facebook" href="http://www.facebook.com/rollefb"><span class="fa fa-facebook"></span> Facebookiin</a>.</p>
+
+    				<p class="info">Ylioppilas<br />
+            Tyttöystävä<br />
+            Viittomakieli</p>
     			</div> <!-- timeline-content -->
     		</div> <!-- timeline-block -->
 
@@ -253,6 +285,11 @@
             <p>Jään sosiaalisten tilanteiden pelon aiheuttaman työkyvyttömyyden vuoksi sairaslomalle. Bloggaan paljon myös <a href="http://www.rollemaa.org/avainsana/sivari/">sivariin</a> liittyvistä aiheista. Menen Veeran kanssa kihloihin ja kesällä naimisiin. Tämä ja edellinen vuosi ovat elämäni vaikeimpia.</p>
             <p class="info">Siviilipalvelus Jyväskylän Yliopistolla<br />
             Kihlaus ja häät</p>
+
+            <p>Rekisteröidyn <a class="twitter" href="http://www.twitter.com/rolle"><span class="fa fa-twitter"></span> Twitteriin</a>.</p>
+
+            <p class="tweet"></p>
+
           </div> <!-- timeline-content -->
         </div> <!-- timeline-block -->
 
@@ -345,7 +382,7 @@
 
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new info();a=s.createElement(o),
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 

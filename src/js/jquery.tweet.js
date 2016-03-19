@@ -112,21 +112,21 @@
 			var delta = parseInt((relative_to.getTime() - date) / 1000, 10);
 			var r = '';
 			if (delta < 1) {
-				r = 'just now';
+				r = 'juuri nyt';
 			} else if (delta < 60) {
-				r = delta + ' seconds ago';
+				r = delta + ' sekuntia sitten';
 			} else if(delta < 120) {
-				r = 'about a minute ago';
+				r = 'noin minuutti sitten';
 			} else if(delta < (45*60)) {
-				r = 'about ' + (parseInt(delta / 60, 10)).toString() + ' minutes ago';
+				r = '' + (parseInt(delta / 60, 10)).toString() + ' minuuttia sitten';
 			} else if(delta < (2*60*60)) {
-				r = 'about an hour ago';
+				r = 'tunti sitten';
 			} else if(delta < (24*60*60)) {
-				r = 'about ' + (parseInt(delta / 3600, 10)).toString() + ' hours ago';
+				r = '' + (parseInt(delta / 3600, 10)).toString() + ' tuntia sitten';
 			} else if(delta < (48*60*60)) {
-				r = 'about a day ago';
+				r = 'eilen';
 			} else {
-				r = 'about ' + (parseInt(delta / 86400, 10)).toString() + ' days ago';
+				r = '' + (parseInt(delta / 86400, 10)).toString() + ' päivää sitten';
 			}
 			return r;
 		}

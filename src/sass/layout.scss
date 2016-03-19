@@ -61,7 +61,7 @@ body {
   background: #f0f0f0;
 }
 
-header {
+.main-header {
   background-image: url('../video/video.jpg');
   height: 100vh;
   min-height: 400px;
@@ -435,6 +435,99 @@ header {
     height: auto;
     margin-bottom: 1.6em;
     border-radius: 4px;
+  }
+
+  .np {
+    overflow: hidden;
+    margin-bottom: 1.6em;
+
+    .item {
+      @include background-cover();
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      float: left;
+      margin-right: 1.6em;
+    }
+
+    p {
+      font-size: 80%;
+      position: relative;
+      top: 10px;
+
+      .timeago {
+        opacity: .6;
+      }
+    }
+  }
+
+  .lastfm {
+    color: #d51007;
+
+    span {
+      color: #d51007;
+    }
+
+    &:hover {
+      opacity: .8;
+
+      span {
+        opacity: .8;
+      }
+    }
+  }
+
+  .facebook {
+    color: #3b5998;
+
+    span {
+      color: #3b5998;
+    }
+
+    &:hover {
+      opacity: .8;
+
+      span {
+        opacity: .8;
+      }
+    }
+  }
+
+  .twitter {
+    color: #55acee;
+
+    span {
+      color: #55acee;
+    }
+
+    &:hover {
+      opacity: .8;
+
+      span {
+        opacity: .8;
+      }
+    }
+  }
+
+  .tweet_list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+      font-size: 80%;
+
+      img {
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        float: left;
+        margin-right: 15px;
+        top: -5px;
+        position: relative;
+        margin-left: 0;
+      }
+    }
   }
 
   h2 {
