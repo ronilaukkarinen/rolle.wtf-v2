@@ -175,7 +175,7 @@ ob_start();
 
 		    <h1 lang="en">Rolle.</h1>
 
-        <a href="#lang-en" onclick="window.lang.change('en'); return false;">en</a> | <a href="#lang-fi" onclick="window.lang.change('fi'); return false;">fi</a>
+        <!-- <a href="#lang-en" onclick="window.lang.change('en'); return false;">en</a> | <a href="#lang-fi" onclick="window.lang.change('fi'); return false;">fi</a> -->
 
         <p><span lang="en">I'm Roni</span></a> <strong>&lt;rolle&gt;</strong> Laukkarinen, <span lang="en">Full stack / Front End web developer</span> (<span lang="en">which means some kind of a</span> <i lang="en">coder</i> <span lang="en">or</span> <i lang="en">nerd</i>), <span lang="en">dinosaur in social media age, craft beer enthusiast, music- and movie digger. I build beautiful and functional websites and tweet a lot.</span></p>
 
