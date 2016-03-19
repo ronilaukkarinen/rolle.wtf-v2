@@ -6,18 +6,7 @@ Website at [rolle.wtf](http://rolle.wtf). A site where it all comes together. Bu
 
 ### Cache
 
-I have a simple PHP-cache which reloads every 10 minutes because of the social media feeds. Crontab follows:
-
-````
-*/6 * * * * /var/www/rolle.wtf/bin/flushrollewtfcache
-````
-
-`flushrollewtfcache` -executable:
-
-````
-!/bin/bash
-cd /var/www/rolle.wtf/public_html && rm *.html && wget -q http://rolle.wtf
-````
+Rolle.wtf is currently cached with static nginx magic and Google Pagespeed nginx-module.
 
 ### Building blocks
 

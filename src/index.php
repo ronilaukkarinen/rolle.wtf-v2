@@ -1,13 +1,3 @@
-<?php
-$cachefile = 'cached-index.html';
-$cachetime = 1800;
-if (file_exists($cachefile) && time() - $cachetime < filemtime($cachefile)) {
-    include($cachefile);
-    echo "<!-- Amazing hand crafted super cache, generated ".info('H:i', filemtime($cachefile))." -->";
-    exit;
-}
-ob_start();
-?>
 <!doctype html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -20,16 +10,12 @@ ob_start();
     <meta name="description" content="Roni Laukkarinen is a Finnish web developer, Twitter freak, craft beer enthusiast. Find out more.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="css/layout.css">
-
     <link rel="shortcut icon" href="images/favicon.png">
 
     <!--[if lt IE 9]>
         <script src="js/vendor/html5-3.6-respond-1.1.0.min.js"></script>
     <![endif]-->
 
-    <script src="https://use.typekit.net/ixg4duh.js"></script>
-    <script>try{Typekit.load({ async: true });}catch(e){}</script>
 </head>
 <body>
 	<header class="main-header">
@@ -342,7 +328,6 @@ ob_start();
             <p>Manu-poika syntyy elokuussa 2013.</p>
 
             <blockquote class="instagram-media" data-instgrm-version="6" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAAGFBMVEUiIiI9PT0eHh4gIB4hIBkcHBwcHBwcHBydr+JQAAAACHRSTlMABA4YHyQsM5jtaMwAAADfSURBVDjL7ZVBEgMhCAQBAf//42xcNbpAqakcM0ftUmFAAIBE81IqBJdS3lS6zs3bIpB9WED3YYXFPmHRfT8sgyrCP1x8uEUxLMzNWElFOYCV6mHWWwMzdPEKHlhLw7NWJqkHc4uIZphavDzA2JPzUDsBZziNae2S6owH8xPmX8G7zzgKEOPUoYHvGz1TBCxMkd3kwNVbU0gKHkx+iZILf77IofhrY1nYFnB/lQPb79drWOyJVa/DAvg9B/rLB4cC+Nqgdz/TvBbBnr6GBReqn/nRmDgaQEej7WhonozjF+Y2I/fZou/qAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/5DHZZ_G0Z7/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">Kuva, jonka Roni Rolle Laukkarinen (@rolle_) julkaisi</a> <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2015-07-12T19:58:51+00:00">12. 07ta 2015 klo 12.58 PDT</time></p></div></blockquote>
-<script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
 
             <p class="info">Ensimmäinen yritys<br />
             Digitoimisto Dude Oy perustetaan<br />
@@ -417,13 +402,11 @@ ob_start();
     ga('send', 'pageview');
   </script>
 
+  <link rel="stylesheet" href="css/layout.css">
   <script src="js/all.js"></script>
+  <script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
+  <script src="https://use.typekit.net/ixg4duh.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
 </body>
 </html>
-<?php
-$fp = fopen($cachefile, 'w');
-fwrite($fp, ob_get_contents());
-fclose($fp);
-ob_end_flush();
-?>
