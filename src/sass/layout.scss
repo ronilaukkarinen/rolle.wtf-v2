@@ -430,6 +430,11 @@ body {
   padding-right: 1em;
   padding-bottom: 0;
 
+  .instagram-media {
+    margin-bottom: 1.6em !important;
+    overflow: hidden !important;
+  }
+
   img {
     width: 100%;
     height: auto;
@@ -609,6 +614,36 @@ body {
   .timeline-content .read-more,
   .timeline-content .info {
     font-size: .875rem;
+  }
+}
+
+.note-footer {
+  width: 45%;
+  position: absolute;
+  bottom: 300px;
+  right: 0;
+
+  p {
+    color: darken(#bdbfc0, 25%);
+    line-height: 1.5;
+    font-size: 15px;
+  }
+
+  .todoist {
+    color: #dd4b39;
+
+    img {
+      height: 19px;
+      margin-top: 3px;
+      top: 3px;
+      position: relative;
+      fill: #dd4b39;
+      margin-right: 4px;
+    }
+
+    &:hover {
+      opacity: .8;
+    }
   }
 }
 
