@@ -92,9 +92,10 @@ gulp.task('styles', function() {
     outputStyle: 'compressed',
     includePaths: [
       'bower_components/',
+      'vendor/bower_components/',
       'node_modules/',
       // require('node-bourbon').includePaths
-    ]    
+    ]
   }))
 
   .on('error', handleError('styles'))
@@ -138,6 +139,7 @@ gulp.task('js', function() {
       gulp.src(
         [
           'node_modules/jquery/dist/jquery.js',
+          'node_modules/skrollr/dist/skrollr.min.js',
           jsSrc + '/modernizr.js',
           jsSrc + '/main.js',
           jsSrc + '/scripts.js',

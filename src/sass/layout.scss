@@ -54,6 +54,13 @@ body {
   background-color: #f0f0f0;
 }
 
+.site {
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+  background: #f0f0f0;
+}
+
 header {
   background-image: url('../video/video.jpg');
   height: 100vh;
@@ -66,23 +73,68 @@ header {
   background-position: top;
   position: relative;
 
+  .animated-mouse {
+    @include horizontal-align();
+    width: 27px;
+    height: 47px;
+    border: 2px solid #fff;
+    transform: translate(-50%, -50%);
+    border-radius: 14px;
+    background: transparent;
+    position: absolute;
+    bottom: 7%;
+
+    .animated-mouse-pointer {
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      border-radius: 100%;
+      background: #fff;
+      left: 49%;
+      top: 70%;
+      transform: translate(-50%, 0);
+      animation-name: mousePointer;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+      animation-direction: normal;
+      animation-timing-function: linear;
+      animation-fill-mode: backwards;
+      animation-delay: .5s;
+    }
+  }
+
+  // <video>-tag
+  .background-video {
+    position: fixed;
+    overflow: hidden;
+    z-index: 0;
+    min-width: 100%;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
   .shade {
-    opacity: .4;
+    opacity: .5;
     background: #303e49;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    z-index: 1;
   }
 
   h1 {
-    color: #fff;
-    margin-top: 0;
-    margin-bottom: 20px;
+    @include typeset($sans, 80px, 2rem, 0, 2);
+    font-weight: 900;
+    color: #fff;;
   }
 
   p {
+    @include typeset($sans, 18px, 2rem, 0, 2);
+    font-weight: 400;
     color: #fff;
   }
 
@@ -104,10 +156,10 @@ header {
         color: #fff;
 
         img {
-            height: 19px;
-            margin-top: 3px;
-            top: 3px;
-            position: relative;
+          height: 19px;
+          margin-top: 3px;
+          top: 3px;
+          position: relative;
         }
 
         span {
@@ -129,6 +181,8 @@ header {
     @include centered();
     line-height: 1.5;
     position: relative;
+    z-index: 2;
+    opacity: .85;
 
     @media only screen and (min-width: 1170px) {
       @include centered();
@@ -139,7 +193,6 @@ header {
 
 // Modules - reusable parts of our design
 .container {
-
   // This class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width
   width: 90%;
   max-width: 1170px;
@@ -225,7 +278,7 @@ header {
     font-size: 15px;
     color: #fff;
 
-    @media(max-width: 1170px) {
+    @media (max-width: 1170px) {
       top: -1px;
       font-size: 12px;
     }
@@ -309,7 +362,7 @@ header {
       border-radius: 4px;
       margin-bottom: 1.6em;
 
-      @media(max-width: $container-mobile) {
+      @media (max-width: $container-mobile) {
         width: 100%;
         max-width: 100%;
         height: auto;
@@ -343,7 +396,6 @@ header {
   display: table;
   clear: both;
 }
-
 
 .timeline-content p,
 .timeline-content .read-more,
@@ -493,5 +545,42 @@ header {
     -ms-transform: translateX(0);
     -o-transform: translateX(0);
     transform: translateX(0);
+  }
+}
+
+@keyframes mousePointer {
+  0% {
+    opacity: 0;
+    top: 20%;
+  }
+
+  20% {
+    opacity: 1;
+    top: 20%;
+  }
+
+  40% {
+    opacity: 1;
+    top: 20%;
+  }
+
+  60% {
+    opacity: 1;
+    top: 70%;
+  }
+
+  61% {
+    opacity: 1;
+    top: 70%;
+  }
+
+  67% {
+    opacity: 0;
+    top: 70%;
+  }
+
+  100% {
+    opacity: 0;
+    top: 70%;
   }
 }

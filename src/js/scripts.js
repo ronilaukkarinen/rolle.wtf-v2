@@ -18,4 +18,8 @@ $(window).load(function() {
 
 $(document).ready(function(){
 
+	var s = skrollr.init({
+		forceHeight: false
+	});
+
 });

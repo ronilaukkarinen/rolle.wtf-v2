@@ -1,0 +1,9 @@
+{
+  "name": "rolle.wtf-2016",
+  "devDependencies": {
+    "megatype": "*"
+  },
+  "dependencies": {
+    "jquery-lang-js": "^3.0.0"
+  }
+}
