@@ -1,3 +1,12 @@
+<?php
+$cachefile = 'cached-index.html';
+$cachetime = 1800;
+if (file_exists($cachefile) && time() - $cachetime < filemtime($cachefile)) {
+echo "<!-- Amazing hand crafted super cache by rolle, generated ".date('H:i', filemtime($cachefile))." -->";
+include($cachefile);
+exit;
+}
+ob_start(); ?>
 <!doctype html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -215,6 +224,7 @@
             <p>Ensimmäinen WordPress-sivustoni <a href="http://www.rollemaa.org">Rollemaa</a> on yhä pystyssä. Viimeisin bloggaus kirjoitettu <b><?php $url = "http://www.rollemaa.org/feed/"; $rss = simplexml_load_file($url); if($rss) : include_once('inc/time-since-fin.php'); echo " ".aika(abs(strtotime($rss->channel->lastBuildDate . " GMT")), time())." "; ?></b> sitten. <?php endif; ?></p>
 
             <p>Rekisteröidyn <a href="http://www.last.fm/user/rolle-/" class="lastfm"><span class="fa fa-lastfm"></span> Last.fm:ään.</a></p>
+						<div class="np"><?php include('inc/lastfm/index.php'); ?></div>
 
     				<p class="info">WordPress julkaistaan, bloggausinto kasvaa,<br />
             Taidot kehittyy<br />
@@ -531,3 +541,9 @@
 
 </body>
 </html>
+<?php
+$fp = fopen($cachefile, 'w');
+fwrite($fp, ob_get_contents());
+fclose($fp);
+ob_end_flush();
+?>

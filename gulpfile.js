@@ -166,8 +166,8 @@ gulp.task('minify-html', function() {
       removeComments: false,
       removeScriptTypeAttributes: true,
       removeStyleLinkTypeAttributes: true,
-      // minifyJS: true,
-      // minifyCSS: true
+      minifyJS: true,
+      minifyCSS: true
     }))
     .pipe(gulp.dest(markupDest))
 });
