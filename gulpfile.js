@@ -73,7 +73,7 @@ gulp.task('browsersync', function() {
 
     browserSync.init(files, {
         proxy: "rollewtf16.dev",
-        browser: "Google Chrome Canary",
+        browser: "Google Chrome",
         notify: true
     });
 });
@@ -161,14 +161,14 @@ MARKUP
 
 gulp.task('minify-html', function() {
   gulp.src(markupSrc)
-    // .pipe(minifyhtml({
-    //   collapseWhitespace: true,
-    //   removeComments: false,
-    //   removeScriptTypeAttributes: true,
-    //   removeStyleLinkTypeAttributes: true,
-    //   minifyJS: true,
-    //   minifyCSS: true
-    // }))
+    .pipe(minifyhtml({
+      collapseWhitespace: true,
+      removeComments: false,
+      removeScriptTypeAttributes: true,
+      removeStyleLinkTypeAttributes: true,
+      // minifyJS: true,
+      // minifyCSS: true
+    }))
     .pipe(gulp.dest(markupDest))
 });
 
