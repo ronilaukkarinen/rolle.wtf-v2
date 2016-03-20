@@ -18,7 +18,8 @@ ob_start(); ?>
     <title>Rolle &mdash; A front end developer, web designer &mdash; Roni Laukkarinen</title>
     <meta name="description" content="Roni Laukkarinen is a Finnish web developer, Twitter freak, craft beer enthusiast. Find out more.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="shortcut icon" href="images/favicon.png">	
+		<meta property="og:image" content="https://rolle.wtf/video/video.jpg" />
 </head>
 <body>
 	<header class="main-header">
