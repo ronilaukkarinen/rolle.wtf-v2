@@ -225,7 +225,7 @@ ob_start(); ?>
             <p>Ensimmäinen WordPress-sivustoni <a href="http://www.rollemaa.org">Rollemaa</a> on yhä pystyssä. Viimeisin bloggaus kirjoitettu <b><?php $url = "http://www.rollemaa.org/feed/"; $rss = simplexml_load_file($url); if($rss) : include_once('inc/time-since-fin.php'); echo " ".aika(abs(strtotime($rss->channel->lastBuildDate . " GMT")), time())." "; ?></b> sitten. <?php endif; ?></p>
 
             <p>Rekisteröidyn <a href="http://www.last.fm/user/rolle-/" class="lastfm"><span class="fa fa-lastfm"></span> Last.fm:ään.</a></p>
-						<div class="np"><?php include('inc/lastfm/index.php'); ?></div>
+						<?php //echo '<div class="np">'; include('inc/lastfm/index.php'); echo '</div>'; ?>
 
     				<p class="info">WordPress julkaistaan, bloggausinto kasvaa,<br />
             Taidot kehittyy<br />
