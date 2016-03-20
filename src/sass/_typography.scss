@@ -1,35 +1,9 @@
 // Font awesome icon fonts
 @import 'font-awesome/scss/font-awesome';
 
-// Pennman's mixin for Google Web Fonts
-@import 'sass-web-fonts/web-fonts';
-
 // Modular scale
 @import 'megatype/megatype';
 @include megatype;
-
-// Google web fonts in use:
-$url: web-fonts-url(
-  ('Roboto':
-    ('300',
-     '300 italic',
-     '400',
-     '400 italic',
-     '500',
-     '500 italic',
-     '700',
-     '700 italic',
-     '900',
-     '900 italic')
-     ),
-  ('Source Sans Pro':
-    ('700',
-     '700 italic'
-    )
-  )
-);
-
-@import url($url);
 
 body {
   line-height: 2rem;
