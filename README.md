@@ -20,6 +20,14 @@ Rolle.wtf is currently cached with static nginx magic and Google Pagespeed nginx
 * [megatype](https://github.com/StudioThick/megatype) - Execute typographic structure with ease
 * [Typekit](https://typekit.com/) - Use beautiful fonts in your designs
 
+### Tools
+
+* [Gulp](https://github.com/gulpjs/gulp) - The streaming build system
+* [Composer](https://github.com/composer/composer) - Dependency Manager for PHP
+* [Npm](https://github.com/npm/npm) - a package manager for javascript
+* [Dandelion](https://github.com/scttnlsn/dandelion) - Incremental Git repository deployment
+* [Bower](https://github.com/bower/bower) - A package manager for the web
+
 ### Todo
 
-- [ ] English language + language switcher
+- [ ] English language + language switcher with jquery-lang
