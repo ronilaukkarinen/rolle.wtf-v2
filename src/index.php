@@ -18,7 +18,7 @@ ob_start(); ?>
     <title>Rolle &mdash; A front end developer, web designer &mdash; Roni Laukkarinen</title>
     <meta name="description" content="Roni Laukkarinen is a Finnish web developer, Twitter freak, craft beer enthusiast. Find out more.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="images/favicon.png">	
+    <link rel="shortcut icon" href="images/favicon.png">
 		<meta property="og:image" content="https://rolle.wtf/video/video.jpg" />
 </head>
 <body>
@@ -167,7 +167,7 @@ ob_start(); ?>
     				<p>Saan ensimmäiset tietokonepelini synttärilahjaksi, usealla levykkeellä varustettuna. Näistä mieleen jäi etenkin vuonna 1991 julkaistu Rolling Ronny, isälläni on huumorintajua. Myöhemmin ensimmäisenä nettinickinä olikin "ronny".</p>
 
             <div class="videoWrapper">
-              <iframe width="560" height="315" src="http://www.youtube.com/embed/2Akso4taEbA?vq=hd1080&modestbranding=1&iv_load_policy=3&showinfo=0&theme=light&color=white" frameborder="0"></iframe>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/2Akso4taEbA?vq=hd1080&modestbranding=1&iv_load_policy=3&showinfo=0&theme=light&color=white" frameborder="0"></iframe>
             </div>
 
             <p class="info">Ensimmäiset tietokonepelit,<br />
@@ -244,7 +244,7 @@ ob_start(); ?>
 
             <p>Tiedän että backend-ohjelmoijaa minusta ei ainakaan tule, mutta verkkosivuissa olen yhä mielestäni haka. Tutustun Espoosta Jyväskylään muuttaneeseen Veeraan IRCissä ja suhteesta kehkeytyy jotain vakavempaa. Veeran kuurosokeuden myötä opettelen viittomakielen.</p>
 
-            <p>Rekisteröidyn <a class="facebook" href="http://www.facebook.com/rollefb"><span class="fa fa-facebook"></span> Facebookiin</a>.</p>
+            <p>Rekisteröidyn <a class="facebook" href="https://www.facebook.com/rollefb"><span class="fa fa-facebook"></span> Facebookiin</a>.</p>
 
     				<p class="info">Ylioppilas<br />
             Tyttöystävä<br />
@@ -264,7 +264,7 @@ ob_start(); ?>
             <p class="info">Siviilipalvelus Jyväskylän Yliopistolla<br />
             Kihlaus ja häät</p>
 
-            <p>Rekisteröidyn <a class="twitter" href="http://www.twitter.com/rolle"><span class="fa fa-twitter"></span> Twitteriin</a>.</p>
+            <p>Rekisteröidyn <a class="twitter" href="https://www.twitter.com/rolle"><span class="fa fa-twitter"></span> Twitteriin</a>.</p>
 
             <p class="tweet"></p>
 
@@ -347,13 +347,13 @@ ob_start(); ?>
           </div> <!-- timeline-icon -->
 
           <div class="timeline-content">
-            <p>Kehityn entistä paremman webin tekemiseen, asiakkaiden palvelemiseen parhaalla mahdollisella tavalla. Minut löytää netistä monesta paikkaa, <a href="http://twitter.com/rolle">pistä tweettiä jos innosti!</a></p>
+            <p>Kehityn entistä paremman webin tekemiseen, asiakkaiden palvelemiseen parhaalla mahdollisella tavalla. Minut löytää netistä monesta paikkaa, <a href="https://twitter.com/rolle">pistä tweettiä jos innosti!</a></p>
             <p class="info">Nykyhetki ja tulevaisuus</p>
           </div> <!-- timeline-content -->
         </div> <!-- timeline-block -->
 
         <div class="note-footer">
-          <p>Jaksoit rullata loppuun asti? siistiä! Tykkään pitää itseni kiireisenä. Tällä hetkellä <a class="todoist" href="http://todoist.com"><img src="images/todoist.svg" alt="Todoist" />Todoistissani</a> on <b><?php include('inc/todoist/index.php'); ?></b> tehtävää.</p>
+          <p>Jaksoit rullata loppuun asti? siistiä! Tykkään pitää itseni kiireisenä. Tällä hetkellä <a class="todoist" href="https://todoist.com"><img src="images/todoist.svg" alt="Todoist" />Todoistissani</a> on <b><?php include('inc/todoist/index.php'); ?></b> tehtävää.</p>
         </div>
 
         <footer class="footer">
