@@ -21,6 +21,8 @@ ob_start(); ?>
     <link rel="shortcut icon" href="images/favicon.png">
 		<link rel="stylesheet" href="css/layout.css">
 		<meta property="og:image" content="https://rolle.wtf/video/video.jpg" />
+    <script src="https://use.typekit.net/ixg4duh.js"></script>
+  	<script>try{Typekit.load({ false: true });}catch(e){}</script>    
 </head>
 <body>
 	<header class="main-header">
@@ -401,8 +403,6 @@ ob_start(); ?>
 	</script>
 
 	<script src="js/all.js"></script>
-	<script src="https://use.typekit.net/ixg4duh.js"></script>
-	<script>try{Typekit.load({ async: true });}catch(e){}</script>
 
 	<script>
 		var lang = new Lang();
