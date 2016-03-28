@@ -64,6 +64,7 @@ body {
 .main-header {
   background-image: url('../video/video.jpg');
   height: 100vh;
+  content: 'viewport-units-buggyfill; height: 100vh;';
   min-height: 400px;
   line-height: 400px;
   text-align: center;

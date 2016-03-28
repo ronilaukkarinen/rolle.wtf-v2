@@ -30,6 +30,7 @@
     "jquery": "*",
     "js-cookie": "^2.1.0",
     "normalize.css": "*",
-    "skrollr": "^0.6.26"
+    "skrollr": "^0.6.26",
+    "viewport-units-buggyfill": "^0.6.0"
   }
 }

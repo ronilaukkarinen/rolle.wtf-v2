@@ -140,6 +140,7 @@ gulp.task('js', function() {
         [
           'node_modules/jquery/dist/jquery.js',
           'node_modules/skrollr/dist/skrollr.min.js',
+	  'node_modules/viewport-units-buggyfill/viewport-units-buggyfill.js',
           jsSrc + '/jquery-lang.js',
           jsSrc + '/js.cookie.js',
           jsSrc + '/modernizr.js',

@@ -12,6 +12,9 @@ any: function() { return (isMobile.Android() || isMobile.BlackBerry() || isMobil
 
 $(document).ready(function() {
 
+	// Fix viewport units on iOS
+	window.viewportUnitsBuggyfill.init();
+
 	// Twitter update
 	$(".tweet").tweet({
 		modpath: '/inc/twitter/',
