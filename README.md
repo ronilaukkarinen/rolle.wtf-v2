@@ -30,4 +30,4 @@ Rolle.wtf is currently cached with static nginx magic and Google Pagespeed nginx
 
 ### Todo
 
-- [ ] English language + language switcher with jquery-lang
+- [x] English language + language switcher with jquery-lang

@@ -68,3 +68,18 @@ $(document).ready(function() {
 	}
 
 });
+
+$(window).ready(function() {
+
+	// Flags
+	$(".langs a").click(function() { $(".lang").toggleClass('visible'); });
+
+	if(lang.currentLang == "en") {
+		$(".langs .lang.fi").addClass('visible');
+	} else {
+		$(".langs .lang.en").addClass('visible');
+	}
+
+	console.log(lang);
+
+});
