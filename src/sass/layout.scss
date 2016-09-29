@@ -1,6 +1,6 @@
 // Imports
 @import 'normalize.css/normalize';
-@import 'jeet/scss/jeet/index';
+@import 'jeet/scss/jeet/jeet';
 
 //  Helpers
 @import 'config';
@@ -851,45 +851,38 @@ body {
 // Language selectors
 .langs {
   position: fixed;
-  top: 1.5rem;
-  right: 1.5rem;
+  top: 0;
+  right: 0;
   z-index: 100;
 
   ul {
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 1rem;
+    line-height: 1;
 
     .lang {
-      display: none;
-      margin: 0;
+      margin: 0 0 5px;
       padding: 0;
+      line-height: 1;
 
       a {
-        border-radius: 4px;
         overflow: hidden;
-        display: block;
+        display: inline-block;
         background: transparent;
-        padding: 5px;
+        padding: .5rem;
         transition: all .22s;
+        color: #fff;
+        font-weight: lighter;
+        font-size: .7rem;
+        border: 2px solid transparent;
+        width: 40px;
+        text-align: center;
+        line-height: .7;
 
-        &:hover {
-          background: #fff;
+        &.active {
+          border-color: #fff;
         }
-      }
-
-      svg {
-        display: block;
-        margin-top: -5px;
-        margin-bottom: -5px;
-
-        path {
-          display: block;
-        }
-      }
-
-      &.visible {
-        display: block;
       }
     }
   }

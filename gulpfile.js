@@ -19,7 +19,7 @@ var concat      = require('gulp-concat');
 var util        = require('gulp-util');
 var header      = require('gulp-header');
 var pixrem      = require('gulp-pixrem');
-var minifyhtml  = require('gulp-htmlmin');
+var htmlmin  = require('gulp-htmlmin');
 var runSequence = require('run-sequence');
 var exec        = require('child_process').exec;
 
@@ -161,16 +161,18 @@ MARKUP
 */
 
 gulp.task('minify-html', function() {
-  gulp.src(markupSrc)
-    .pipe(minifyhtml({
-      collapseWhitespace: true,
-      removeComments: false,
-      removeScriptTypeAttributes: true,
-      removeStyleLinkTypeAttributes: true,
-      minifyJS: true,
-      minifyCSS: true
-    }))
-    .pipe(gulp.dest(markupDest))
+
+  return gulp.src(markupSrc)
+    // Currently not working:
+    // .pipe(htmlmin({
+    //   collapseWhitespace: true,
+    //   removeComments: false,
+    //   removeScriptTypeAttributes: true,
+    //   removeStyleLinkTypeAttributes: true,
+    //   minifyJS: true,
+    //   minifyCSS: true
+    // }))
+    .pipe(gulp.dest(markupDest));
 });
 
 

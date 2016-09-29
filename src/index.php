@@ -29,8 +29,8 @@
 
   <aside class="langs">
     <ul>
-      <li class="lang en"><a href="#lang-en" onclick="window.lang.change('en'); return false;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="40" height="30"><clipPath id="a"><path d="M30 15h30v15zv15H0zH0V0zV0h30z"/></clipPath><path d="M0 0v30h60V0z" fill="#00247d"/><path d="M0 0l60 30m0-30L0 30" stroke="#fff" stroke-width="6"/><path d="M0 0l60 30m0-30L0 30" clip-path="url(#a)" stroke="#cf142b" stroke-width="4"/><path d="M30 0v30M0 15h60" stroke="#fff" stroke-width="10"/><path d="M30 0v30M0 15h60" stroke="#cf142b" stroke-width="6"/></svg></a></li>
-      <li class="lang fi"><a href="#lang-fi" onclick="window.lang.change('fi'); return false;"><svg version="1" xmlns="http://www.w3.org/2000/svg" width="40" height="30" viewBox="0 0 2000.000000 1222.000000"><path fill="#fff" d="M0 0h2000v1222H0z"/><path fill="#002f6c" d="M556 222v222H0v334h556v444h333V778h1111V444H889V0H556v222z"/></svg></a></li>
+      <li class="lang en"><a href="#lang-en" onclick="window.lang.change('en'); return false;">EN</a></li>
+      <li class="lang fi"><a href="#lang-fi" onclick="window.lang.change('fi'); return false;">FI</a></li>
     </ul>
   </aside>
 
@@ -417,7 +417,8 @@
 
 		lang.dynamic('fi', 'fi.json');
 		lang.init({
-			defaultLang: 'en'
+			defaultLang: 'en',
+      allowCookieOverride: false
 		});
 	</script>
 
