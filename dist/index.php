@@ -364,7 +364,7 @@
         </div> <!-- timeline-block -->
 
         <div class="note-footer">
-          <p><span lang="en">Did you really scrolled and read it all the way to this point? That's so cool! I like to keep myself busy. At the moment</span> <a class="todoist" href="https://todoist.com"><img src="images/todoist.svg" alt="Todoist" /><span lang="en">in my Todoist</span></a> <span lang="en">there's</span> <b><?php include('inc/todoist/index.php'); ?></b> <span lang="en">tasks</span>.</p>
+          <p><span lang="en">Did you really scrolled and read it all the way to this point? That's so cool! I like to keep myself busy.</p>
         </div>
 
         <footer class="footer">
