@@ -416,13 +416,19 @@
 		var lang = new Lang();
 
 		lang.dynamic('fi', 'fi.json');
-		lang.init({
-			defaultLang: 'en'
-		});
+		lang.init();
 
     $(window).ready(function() {
 
       $(".hide").hide();
+
+      setTimeout(function() {
+        lang.dynamic('fi', 'fi.json');
+        window.lang.change('fi');
+        $(".langs .lang.en a").removeClass('active');
+        $(".langs .lang.fi a").addClass('active');
+        $(".hide").show();
+      }, 1000);
 
     	// Language switcher
     	$(".langs .lang.en a").click(function() {
