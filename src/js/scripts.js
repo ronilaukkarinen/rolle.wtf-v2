@@ -68,24 +68,3 @@ $(document).ready(function() {
 	}
 
 });
-
-$(window).ready(function() {
-
-	// Language switcher
-	$(".langs .lang.en a").click(function() {
-    $(".langs .lang.en a").addClass('active');
-    $(".langs .lang.fi a").removeClass('active');
-  });
-
-  $(".langs .lang.fi a").click(function() {
-    $(".langs .lang.fi a").addClass('active');
-    $(".langs .lang.en a").removeClass('active');
-  });
-
-	if(lang.currentLang == "en") {
-		$(".langs .lang.en a").addClass('active');
-	} else {
-		$(".langs .lang.fi a").addClass('active');
-	}
-
-});

@@ -50,7 +50,7 @@
 
 		    <h1 lang="en">Rolle.</h1>
 
-        <p><span lang="en">I'm Roni</span></a> <strong>&lt;rolle&gt;</strong> Laukkarinen, <span lang="en">Full stack / Front End web developer</span> (<span lang="en">which means some kind of a</span> <i lang="en">coder</i> <span lang="en">or</span> <i lang="en">nerd</i>), <span lang="en">dinosaur in social media age, craft beer enthusiast, music- and movie digger. I build beautiful and functional websites and tweet a lot.</span></p>
+        <p><span lang="en">I'm Roni</span></a> <strong>&lt;rolle&gt;</strong> Laukkarinen, <span lang="en">Full stack / Front End web developer</span> (<span lang="en">which means some kind of a</span> <i lang="en">coder</i> <span lang="en">or</span> <i lang="en">nerd</i>), <span lang="en">dinosaur in social media age, craft beer enthusiast, music- and movie digger. I build beautiful and functional websites and tweet a lot.</span> <span class="hide" lang="fi">Lisää infoa minusta mm. <a href="https://www.rollemaa.org/info">henkilökohtaisessa blogissani</a>.</span></p>
 
         <ul class="some">
           <li><a href="skype:roni.laukkarinen"><span class="fa fa-skype"></span><span class="screen-reader-text">Add me to Skype</a></li>
@@ -417,9 +417,32 @@
 
 		lang.dynamic('fi', 'fi.json');
 		lang.init({
-			defaultLang: 'en',
-      allowCookieOverride: false
+			defaultLang: 'en'
 		});
+
+    $(window).ready(function() {
+
+      $(".hide").hide();
+
+    	// Language switcher
+    	$(".langs .lang.en a").click(function() {
+        $(".langs .lang.en a").addClass('active');
+        $(".langs .lang.fi a").removeClass('active');
+        $(".hide").hide();
+      });
+
+      $(".langs .lang.fi a").click(function() {
+        $(".langs .lang.fi a").addClass('active');
+        $(".langs .lang.en a").removeClass('active');
+        $(".hide").show();
+      });
+
+    	if(lang.currentLang == "en" || window.lang.currentLang == "en") {
+    		$(".langs .lang.en a").addClass('active');
+    	} else {
+    		$(".langs .lang.fi a").addClass('active');
+    	}
+    });
 	</script>
 
 </body>
